@@ -86,12 +86,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29394
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 29394: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF84)));
 [v _TRISDbits `VS1379 ~T0 @X0 0 e@3972 ]
-"21 ./LCD.h
-[; ;./LCD.h: 21: void LCD_setline (char line);
-[v _LCD_setline `(v ~T0 @X0 0 ef1`uc ]
-"9 ./ADC.h
-[; ;./ADC.h: 9: unsigned int ADC_getval(void);
-[v _ADC_getval `(ui ~T0 @X0 0 ef ]
+"20 main.c
+[; ;main.c: 20: extern volatile unsigned int hour;
+[v _hour `Vui ~T0 @X0 0 e ]
+"9 ./timers.h
+[; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
+[v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
+"10 ./LEDarray.h
+[; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
+[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
 "19 ./LCD.h
 [; ;./LCD.h: 19: void LCD_sendbyte(unsigned char Byte, char type);
 [v _LCD_sendbyte `(v ~T0 @X0 0 ef2`uc`uc ]
@@ -99,15 +102,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 C:\Program Files\Microchip\xc8\v2.45\pic\include\builtins.h
 [v __delay `JF205 ~T0 @X0 0 e ]
 [p i __delay ]
-"25 ./LCD.h
-[; ;./LCD.h: 25: void ADC2String(char *buf, unsigned int ADC_val);
-[v _ADC2String `(v ~T0 @X0 0 ef2`*uc`ui ]
-"10 ./LEDarray.h
-[; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
-[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
-"9 ./timers.h
-[; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
-[v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
+"21 ./LCD.h
+[; ;./LCD.h: 21: void LCD_setline (char line);
+[v _LCD_setline `(v ~T0 @X0 0 ef1`uc ]
+"121 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"9 ./ADC.h
+[; ;./ADC.h: 9: unsigned int ADC_getval(void);
+[v _ADC_getval `(ui ~T0 @X0 0 ef ]
+"22 ./LCD.h
+[; ;./LCD.h: 22: void LCD_sendstring(char *string);
+[v _LCD_sendstring `(v ~T0 @X0 0 ef1`*uc ]
 "2 main.c
 [p x FEXTOSC  =  HS      ]
 "3
@@ -2089,93 +2095,125 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 40592: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20 main.c
-[; ;main.c: 20: void main(void) {
+"22 main.c
+[; ;main.c: 22: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"22
-[; ;main.c: 22:     LCD_Init();
-[e ( _LCD_Init ..  ]
-"23
-[; ;main.c: 23:     Comp1_init();
-[e ( _Comp1_init ..  ]
 "24
-[; ;main.c: 24:  ADC_init();
-[e ( _ADC_init ..  ]
+[; ;main.c: 24:     LCD_Init();
+[e ( _LCD_Init ..  ]
+"25
+[; ;main.c: 25:     Comp1_init();
+[e ( _Comp1_init ..  ]
 "26
-[; ;main.c: 26:     Timer0_init();
-[e ( _Timer0_init ..  ]
+[; ;main.c: 26:  ADC_init();
+[e ( _ADC_init ..  ]
 "27
-[; ;main.c: 27:     LEDarray_init();
-[e ( _LEDarray_init ..  ]
+[; ;main.c: 27:     Timer0_init();
+[e ( _Timer0_init ..  ]
 "28
-[; ;main.c: 28:     Interrupts_init();
+[; ;main.c: 28:     LEDarray_init();
+[e ( _LEDarray_init ..  ]
+"29
+[; ;main.c: 29:     Interrupts_init();
 [e ( _Interrupts_init ..  ]
-"31
-[; ;main.c: 31:     unsigned int current_ADC_val = 0;
-[v _current_ADC_val `ui ~T0 @X0 1 a ]
-[e = _current_ADC_val -> -> 0 `i `ui ]
 "32
-[; ;main.c: 32:     unsigned int old_ADC_val = 0;
-[v _old_ADC_val `ui ~T0 @X0 1 a ]
-[e = _old_ADC_val -> -> 0 `i `ui ]
+[; ;main.c: 32:     unsigned int time = 0;
+[v _time `ui ~T0 @X0 1 a ]
+[e = _time -> -> 0 `i `ui ]
+"33
+[; ;main.c: 33:     unsigned int day = 0;
+[v _day `ui ~T0 @X0 1 a ]
+[e = _day -> -> 0 `i `ui ]
 "34
-[; ;main.c: 34:     LATHbits.LATH3=0;
-[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 34:     char timeString[10];
+[v _timeString `uc ~T0 @X0 -> 10 `i a ]
 "35
-[; ;main.c: 35:     TRISHbits.TRISH3=0;
-[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
-"36
-[; ;main.c: 36:     LATDbits.LATD7=0;
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 35:     char lightString[4];
+[v _lightString `uc ~T0 @X0 -> 4 `i a ]
 "37
-[; ;main.c: 37:     TRISDbits.TRISD7=0;
-[e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 37:     LATHbits.LATH3=0;
+[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38:     TRISHbits.TRISH3=0;
+[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
 "39
-[; ;main.c: 39:     while (1) {
+[; ;main.c: 39:     LATDbits.LATD7=0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"40
+[; ;main.c: 40:     TRISDbits.TRISD7=0;
+[e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
+"42
+[; ;main.c: 42:     while (1) {
 [e :U 2019 ]
 {
-"40
-[; ;main.c: 40:         LCD_setline(1);
-[e ( _LCD_setline (1 -> -> 1 `i `uc ]
-"41
-[; ;main.c: 41:         current_ADC_val = ADC_getval();
-[e = _current_ADC_val ( _ADC_getval ..  ]
-"43
-[; ;main.c: 43:         if (current_ADC_val != old_ADC_val) {
-[e $ ! != _current_ADC_val _old_ADC_val 2021  ]
-{
 "44
-[; ;main.c: 44:             LCD_sendbyte(0b00000001,0);
-[e ( _LCD_sendbyte (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"45
-[; ;main.c: 45:             _delay((unsigned long)((2)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"46
-[; ;main.c: 46:             ADC2String(100,current_ADC_val);
-[e ( _ADC2String (2 , -> -> 100 `i `*uc _current_ADC_val ]
-"47
-[; ;main.c: 47:             old_ADC_val = current_ADC_val;
-[e = _old_ADC_val _current_ADC_val ]
-"48
-[; ;main.c: 48:         }
+[; ;main.c: 44:         if (hour == 24) {hour = 0; day = day + 1;}
+[e $ ! == _hour -> -> 24 `i `ui 2021  ]
+{
+[e = _hour -> -> 0 `i `ui ]
+[e = _day + _day -> -> 1 `i `ui ]
 }
 [e :U 2021 ]
+"45
+[; ;main.c: 45:         if (hour == 1) {LATDbits.LATD7 = 0;}
+[e $ ! == _hour -> -> 1 `i `ui 2022  ]
+{
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+}
+[e :U 2022 ]
+"46
+[; ;main.c: 46:         if (hour == 5) {LATDbits.LATD7 = 1;}
+[e $ ! == _hour -> -> 5 `i `ui 2023  ]
+{
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 2023 ]
+"48
+[; ;main.c: 48:         time = get16bitTMR0val();
+[e = _time ( _get16bitTMR0val ..  ]
 "49
-[; ;main.c: 49:         _delay((unsigned long)((10)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"50
-[; ;main.c: 50:         LEDarray_disp_bin(get16bitTMR0val());
-[e ( _LEDarray_disp_bin (1 ( _get16bitTMR0val ..  ]
+[; ;main.c: 49:         LEDarray_disp_bin(time);
+[e ( _LEDarray_disp_bin (1 _time ]
 "51
-[; ;main.c: 51:     }
+[; ;main.c: 51:         LCD_sendbyte(0b00000001,0);
+[e ( _LCD_sendbyte (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"52
+[; ;main.c: 52:         _delay((unsigned long)((2)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"54
+[; ;main.c: 54:         LCD_setline(1);
+[e ( _LCD_setline (1 -> -> 1 `i `uc ]
+"55
+[; ;main.c: 55:         sprintf(lightString,"%03d",ADC_getval());
+[e ( _sprintf (1 , (. , &U _lightString :s 1C ( _ADC_getval ..  ]
+"56
+[; ;main.c: 56:         LCD_sendstring(lightString);
+[e ( _LCD_sendstring (1 &U _lightString ]
+"58
+[; ;main.c: 58:         LCD_setline(2);
+[e ( _LCD_setline (1 -> -> 2 `i `uc ]
+"59
+[; ;main.c: 59:         sprintf(timeString,"%03d %02d %03d",time,hour,day);
+[e ( _sprintf (1 , , , (. , &U _timeString :s 2C _time _hour _day ]
+"60
+[; ;main.c: 60:         LCD_sendstring(timeString);
+[e ( _LCD_sendstring (1 &U _timeString ]
+"62
+[; ;main.c: 62:         _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"63
+[; ;main.c: 63:     }
 }
 [e :U 2018 ]
 [e $U 2019  ]
 [e :U 2020 ]
-"52
-[; ;main.c: 52: }
+"64
+[; ;main.c: 64: }
 [e :UE 2017 ]
 }
+[p f _sprintf 8421508 ]
+[a 2C 37 48 51 100 32 37 48 50 100 32 37 48 51 100 0 ]
+[a 1C 37 48 51 100 0 ]

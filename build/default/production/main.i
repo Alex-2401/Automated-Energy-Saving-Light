@@ -24331,19 +24331,22 @@ unsigned int ADC_getval(void);
 
 
 
+extern volatile unsigned int hour;
+
 void main(void) {
 
     LCD_Init();
     Comp1_init();
  ADC_init();
-
     Timer0_init();
     LEDarray_init();
     Interrupts_init();
 
 
-    unsigned int current_ADC_val = 0;
-    unsigned int old_ADC_val = 0;
+    unsigned int time = 0;
+    unsigned int day = 0;
+    char timeString[10];
+    char lightString[4];
 
     LATHbits.LATH3=0;
     TRISHbits.TRISH3=0;
@@ -24351,16 +24354,25 @@ void main(void) {
     TRISDbits.TRISD7=0;
 
     while (1) {
-        LCD_setline(1);
-        current_ADC_val = ADC_getval();
 
-        if (current_ADC_val != old_ADC_val) {
-            LCD_sendbyte(0b00000001,0);
-            _delay((unsigned long)((2)*(64000000/4000.0)));
-            ADC2String(100,current_ADC_val);
-            old_ADC_val = current_ADC_val;
-        }
+        if (hour == 24) {hour = 0; day = day + 1;}
+        if (hour == 1) {LATDbits.LATD7 = 0;}
+        if (hour == 5) {LATDbits.LATD7 = 1;}
+
+        time = get16bitTMR0val();
+        LEDarray_disp_bin(time);
+
+        LCD_sendbyte(0b00000001,0);
+        _delay((unsigned long)((2)*(64000000/4000.0)));
+
+        LCD_setline(1);
+        sprintf(lightString,"%03d",ADC_getval());
+        LCD_sendstring(lightString);
+
+        LCD_setline(2);
+        sprintf(timeString,"%03d %02d %03d",time,hour,day);
+        LCD_sendstring(timeString);
+
         _delay((unsigned long)((10)*(64000000/4000.0)));
-        LEDarray_disp_bin(get16bitTMR0val());
     }
 }

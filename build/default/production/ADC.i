@@ -24137,7 +24137,7 @@ unsigned int ADC_getval(void)
 
 
 
-    tmpval = ((tmpval - 35 + 2) *255)/(151-35+2) ;
+    tmpval = ((tmpval - 31 + 2) *255)/(143-31+2) ;
     if (tmpval > 512) {tmpval = 0;}
 
     return tmpval;

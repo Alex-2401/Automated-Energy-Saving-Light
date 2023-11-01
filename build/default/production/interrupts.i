@@ -24102,6 +24102,7 @@ void __attribute__((picinterrupt(("low_priority")))) LowISR();
 # 2 "interrupts.c" 2
 
 
+volatile unsigned int hour = 0;
 
 
 
@@ -24114,14 +24115,11 @@ void Interrupts_init(void)
     PIE2bits.C1IE=1;
 
     IPR2bits.C1IP = 1;
-    IPR0bits.TMR0IP = 1;
+    IPR0bits.TMR0IP = 0;
+    INTCONbits.IPEN=1;
     INTCONbits.GIE=1;
     INTCONbits.PEIE = 1;
-
-
 }
-
-unsigned int count = 0;
 
 
 
@@ -24133,16 +24131,17 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR()
     if(PIR2bits.C1IF){
      LATHbits.LATH3 = !LATHbits.LATH3;
         PIR2bits.C1IF=0;
-
     }
+}
+
+void __attribute__((picinterrupt(("low_priority")))) LowISR()
+{
+
     if(PIR0bits.TMR0IF){
         TMR0H=0b00001011;
         TMR0L=0b11011011;
 
-        count = count + 1;
-        if (count == 24) {count = 0;}
-        if (count == 1) {LATDbits.LATD7 = 0;}
-        if (count == 5) {LATDbits.LATD7 = 1;}
+        hour = hour + 1;
         PIR0bits.TMR0IF=0;
     }
 }
