@@ -24288,6 +24288,7 @@ void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
 void LEDarray_disp_dec(unsigned int number);
 void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+void LEDarray_control(void);
 # 12 "main.c" 2
 
 # 1 "./interrupts.h" 1
@@ -24327,11 +24328,20 @@ void ADC_init(void);
 unsigned int ADC_getval(void);
 # 15 "main.c" 2
 
+# 1 "./datetime.h" 1
 
 
 
 
-extern volatile unsigned int hour;
+
+
+
+
+void disp_time(void);
+# 16 "main.c" 2
+
+
+
 
 void main(void) {
 
@@ -24343,9 +24353,6 @@ void main(void) {
     Interrupts_init();
 
 
-    unsigned int time = 0;
-    unsigned int day = 0;
-    char timeString[10];
     char lightString[4];
 
     LATHbits.LATH3=0;
@@ -24353,25 +24360,14 @@ void main(void) {
     LATDbits.LATD7=0;
     TRISDbits.TRISD7=0;
 
-    while (1) {
-
-        if (hour == 24) {hour = 0; day = day + 1;}
-        if (hour == 1) {LATDbits.LATD7 = 0;}
-        if (hour == 5) {LATDbits.LATD7 = 1;}
-
-        time = get16bitTMR0val();
-        LEDarray_disp_bin(time);
-
-        LCD_sendbyte(0b00000001,0);
-        _delay((unsigned long)((2)*(64000000/4000.0)));
-
+    while (1)
+    {
         LCD_setline(1);
         sprintf(lightString,"%03d",ADC_getval());
         LCD_sendstring(lightString);
 
-        LCD_setline(2);
-        sprintf(timeString,"%03d %02d %03d",time,hour,day);
-        LCD_sendstring(timeString);
+        disp_time();
+
 
         _delay((unsigned long)((10)*(64000000/4000.0)));
     }

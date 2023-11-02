@@ -1,6 +1,8 @@
 #include <xc.h>
 #include "LEDarray.h"
 
+//volatile unsigned int hour;
+volatile unsigned int day;
 /************************************
 / LEDarray_init
 / Function used to initialise pins to drive the LEDarray
@@ -93,4 +95,12 @@ void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
     // hint: one method is to manipulate the variables separately and then combine them using the bitwise OR operator
 	LEDarray_disp_bin(disp_val);	//display value on LED array
 }
-
+ 
+void LEDarray_control(void)
+{
+    unsigned int temp = 0;
+    if (day % 3 == 0) {temp = 0b001001001;}
+    if (day % 3 == 1) {temp = 0b010010010;}
+    if (day % 3 == 2) {temp = 0b100100100;}
+    LEDarray_disp_bin(temp);
+}

@@ -1,7 +1,9 @@
 #include <xc.h>
 #include "interrupts.h"
+#include "LEDarray.h"
 
-volatile unsigned int hour = 0;
+volatile unsigned int hour;
+
 /************************************
  * Function to turn on interrupts and set if priority is used
  * Note you also need to enable peripheral interrupts in the INTCON register to use CM1IE.
@@ -28,7 +30,9 @@ void __interrupt(high_priority) HighISR()
 {
     //add your ISR code here i.e. check the flag, do something (i.e. toggle an LED), clear the flag...
     if(PIR2bits.C1IF){ 	//check the interrupt source
-	    LATHbits.LATH3 = !LATHbits.LATH3;
+        LATHbits.LATH3 = !LATHbits.LATH3;
+        if (hour > 12) {LEDarray_disp_bin(0b111111111);}//need to change to accurate midday time but good enough for now 
+        else {LEDarray_disp_bin(0b000000000);}
         PIR2bits.C1IF=0; 	//clear the interrupt flag!       
     }
 }

@@ -13,11 +13,9 @@
 #include "interrupts.h"
 #include "comparator.h"
 #include "ADC.h"
-#include "stdio.h"
+#include "datetime.h"
 
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
-
-extern volatile unsigned int hour;      //global variable for hour
 
 void main(void) {
     // Initialising everything
@@ -29,9 +27,6 @@ void main(void) {
     Interrupts_init();
     
     // needed variables
-    unsigned int time = 0;
-    unsigned int day = 0;
-    char timeString[10];
     char lightString[4];
     // setup pin for output (connected to LED)
     LATHbits.LATH3=0;   //set initial output state
@@ -39,25 +34,14 @@ void main(void) {
     LATDbits.LATD7=0;   //set initial output state
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
     
-    while (1) { 
-
-        if (hour == 24) {hour = 0; day = day + 1;}      //checks if a day has passed
-        if (hour == 1) {LATDbits.LATD7 = 0;}            //1am check
-        if (hour == 5) {LATDbits.LATD7 = 1;}            //5am check
-        
-        time = get16bitTMR0val();
-        LEDarray_disp_bin(time);
-        
-        LCD_sendbyte(0b00000001,0); //Clear Display
-        __delay_ms(2);              //delay above 2ms
-
+    while (1)
+    { 
         LCD_setline(1); //Set Line 1
         sprintf(lightString,"%03d",ADC_getval());
         LCD_sendstring(lightString);
         
-        LCD_setline(2); //Set Line 2
-        sprintf(timeString,"%03d %02d %03d",time,hour,day);
-        LCD_sendstring(timeString);
+        disp_time();
+        //LEDarray_control();
         
         __delay_ms(10);
     }
