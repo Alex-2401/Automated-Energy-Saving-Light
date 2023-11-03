@@ -11,55 +11,54 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-init CODE 0 5C 5C 4 1 2
+$C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+init CODE 0 52 52 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 6 1 1
 $dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-intcodelo CODE 0 18 18 44 1 2
-cinit CODE 0 1D0C 1D0C 22 1 2
-intcode_body CODE 0 1974 1974 6C 1 2
-text0 CODE 0 1AAC 1AAC 60 1 2
-text1 CODE 0 1206 1206 F4 1 2
-text2 CODE 0 1BFE 1BFE 34 1 2
-text3 CODE 0 1B0C 1B0C 42 1 2
-text4 CODE 0 E1A E1A 182 1 2
-text5 CODE 0 15FE 15FE AE 1 2
-text6 CODE 0 F9C F9C 168 1 2
-text7 CODE 0 17F8 17F8 8A 1 2
-text8 CODE 0 1B4E 1B4E 3C 1 2
-text9 CODE 0 16AC 16AC AA 1 2
-text10 CODE 0 1DAE 1DAE 2 1 2
-text11 CODE 0 1C32 1C32 34 1 2
-text12 CODE 0 154E 154E B0 1 2
-text13 CODE 0 148A 148A C4 1 2
-text14 CODE 0 1D7C 1D7C 12 1 2
-text15 CODE 0 1756 1756 A2 1 2
-text16 CODE 0 1A48 1A48 64 1 2
-text17 CODE 0 12FA 12FA C8 1 2
-text18 CODE 0 1B8A 1B8A 3A 1 2
-text19 CODE 0 1C66 1C66 2E 1 2
-text20 CODE 0 1D2E 1D2E 20 1 2
-text21 CODE 0 1BC4 1BC4 3A 1 2
-text22 CODE 0 1104 1104 102 1 2
-text23 CODE 0 1C94 1C94 2C 1 2
-text24 CODE 0 19E0 19E0 68 1 2
-text25 CODE 0 1DA0 1DA0 E 1 2
-text26 CODE 0 1D8E 1D8E 12 1 2
-text27 CODE 0 1CC0 1CC0 26 1 2
-text28 CODE 0 1D68 1D68 14 1 2
-text29 CODE 0 1D4E 1D4E 1A 1 2
-text30 CODE 0 1882 1882 7E 1 2
-text31 CODE 0 1CE6 1CE6 26 1 2
-text32 CODE 0 1900 1900 74 1 2
-text35 CODE 0 13C2 13C2 C8 1 2
-cstackCOMRAM COMRAM 1 1 1 4A 1 1
-cstackBANK0 BANK0 1 8A 8A 4 1 1
-temp COMRAM 1 58 58 1 1 1
-bssBANK0 BANK0 1 60 60 2A 1 1
+intcodelo CODE 0 18 18 3A 1 2
+cinit CODE 0 1C78 1C78 22 1 2
+intcode_body CODE 0 1CD4 1CD4 18 1 2
+text0 CODE 0 1A18 1A18 60 1 2
+text1 CODE 0 E28 E28 184 1 2
+text2 CODE 0 1B6A 1B6A 34 1 2
+text3 CODE 0 1A78 1A78 42 1 2
+text4 CODE 0 FAC FAC 184 1 2
+text5 CODE 0 15D6 15D6 AE 1 2
+text6 CODE 0 1130 1130 168 1 2
+text7 CODE 0 17D0 17D0 8A 1 2
+text8 CODE 0 1ABA 1ABA 3C 1 2
+text9 CODE 0 1684 1684 AA 1 2
+text10 CODE 0 1D32 1D32 2 1 2
+text11 CODE 0 1B9E 1B9E 34 1 2
+text12 CODE 0 1526 1526 B0 1 2
+text13 CODE 0 1462 1462 C4 1 2
+text14 CODE 0 1D00 1D00 12 1 2
+text15 CODE 0 172E 172E A2 1 2
+text16 CODE 0 19B4 19B4 64 1 2
+text17 CODE 0 139A 139A C8 1 2
+text18 CODE 0 1AF6 1AF6 3A 1 2
+text19 CODE 0 1BD2 1BD2 2E 1 2
+text20 CODE 0 1C9A 1C9A 20 1 2
+text21 CODE 0 1B30 1B30 3A 1 2
+text22 CODE 0 1298 1298 102 1 2
+text23 CODE 0 1C00 1C00 2C 1 2
+text24 CODE 0 194C 194C 68 1 2
+text25 CODE 0 1D24 1D24 E 1 2
+text26 CODE 0 1D12 1D12 12 1 2
+text27 CODE 0 1C2C 1C2C 26 1 2
+text28 CODE 0 1CEC 1CEC 14 1 2
+text29 CODE 0 1CBA 1CBA 1A 1 2
+text30 CODE 0 185A 185A 7E 1 2
+text31 CODE 0 1C52 1C52 26 1 2
+text32 CODE 0 18D8 18D8 74 1 2
+cstackCOMRAM COMRAM 1 1 1 4B 1 1
+cstackBANK0 BANK0 1 8C 8C 4 1 1
+temp COMRAM 1 5B 5B 1 1 1
+bssBANK0 BANK0 1 60 60 2C 1 1
 intcode CODE 0 8 8 6 1 2
-smallconst SMALLCONST 0 E00 E00 1A 1 2
-bssCOMRAM COMRAM 1 4B 4B D 1 1
+smallconst SMALLCONST 0 E00 E00 28 1 2
+bssCOMRAM COMRAM 1 4C 4C F 1 1
 config CONFIG 4 300000 300000 6 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -67,9 +66,9 @@ config CONFIG 4 300000 300000 6 1 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 8E-DE9 1
+RAM 90-DE9 1
 SFR DEF-FFF 1
-BANK0 8E-FF 1
+BANK0 90-FF 1
 BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
@@ -81,25 +80,25 @@ BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST E-17 1
-CONST 60-DFF 1
-CONST 1DB0-1FFFF 1
+CONST 56-DFF 1
+CONST 1D34-1FFFF 1
 IDLOC 200000-20000F 1
-SMALLCONST 1DB0-1FFFF 1
+SMALLCONST 1D34-1FFFF 1
 CODE 4-7 1
 CODE E-17 1
-CODE 60-DFF 1
-CODE 1DB0-1FFFF 1
+CODE 56-DFF 1
+CODE 1D34-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DE9 1
-BIGRAM 59-5F 1
-BIGRAM 8E-DE9 1
+BIGRAM 5C-5F 1
+BIGRAM 90-DE9 1
 BIGSFR DEF-FFF 1
-COMRAM 59-5F 1
+COMRAM 5C-5F 1
 CONFIG 300006-30000B 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 1DB0-FFFF 1
+MEDIUMCONST 1D34-FFFF 1
 MEDIUMCONST 10E00-1FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -115,446 +114,438 @@ MEDIUMCONST 10E00-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-18 intcodelo CODE >16528:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-18 intcodelo CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-26 intcodelo CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-36 intcodelo CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-3A intcodelo CODE >45:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-3E intcodelo CODE >47:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-4A intcodelo CODE >48:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-4C intcodelo CODE >50:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-8 intcode CODE >16627:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-8 intcode CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-13C2 text35 CODE >47:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-13C2 text35 CODE >51:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-13D8 text35 CODE >52:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-13EE text35 CODE >53:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1404 text35 CODE >54:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-141A text35 CODE >55:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1430 text35 CODE >56:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1446 text35 CODE >57:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-145C text35 CODE >58:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1472 text35 CODE >59:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1488 text35 CODE >61:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1974 intcode_body CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1974 intcode_body CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1984 intcode_body CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-19A8 intcode_body CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-19CC intcode_body CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-19D8 intcode_body CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-19DC intcode_body CODE >38:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1900 text32 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1900 text32 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1908 text32 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-191A text32 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-191E text32 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1922 text32 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1928 text32 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-192A text32 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1938 text32 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-193E text32 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1954 text32 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-195C text32 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-195E text32 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1964 text32 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-196A text32 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-196A text32 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1972 text32 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
-1CE6 text31 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1CE6 text31 CODE >37:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1CF2 text31 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1CFA text31 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1D02 text31 CODE >52:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1D0A text31 CODE >53:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
-1882 text30 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1882 text30 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1884 text30 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1892 text30 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1898 text30 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-18A8 text30 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-18DA text30 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-18F6 text30 CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-18FE text30 CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D4E text29 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D4E text29 CODE >11:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D50 text29 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D54 text29 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D58 text29 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D5C text29 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D60 text29 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D62 text29 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D64 text29 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D66 text29 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
-1D68 text28 CODE >7:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D68 text28 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D6E text28 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D70 text28 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D78 text28 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D7A text28 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CC0 text27 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CC0 text27 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CC2 text27 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CCC text27 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CD4 text27 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CD6 text27 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CD8 text27 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CDA text27 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CDC text27 CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CE0 text27 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1CE4 text27 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
-1D8E text26 CODE >11:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D8E text26 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D92 text26 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D94 text26 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D96 text26 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D98 text26 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D9A text26 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D9C text26 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1D9E text26 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
-1DA0 text25 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1DA0 text25 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1DA2 text25 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1DAA text25 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1DAC text25 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-19E0 text24 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-19E2 text24 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-19F8 text24 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1A0E text24 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1A24 text24 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1A3A text24 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1A3E text24 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1A46 text24 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C94 text23 CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C96 text23 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1CA0 text23 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1CA8 text23 CODE >42:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1CB0 text23 CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1CB6 text23 CODE >45:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1CBE text23 CODE >46:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1104 text22 CODE >51:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1104 text22 CODE >54:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1106 text22 CODE >55:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1108 text22 CODE >56:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-110A text22 CODE >57:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-110C text22 CODE >58:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-110E text22 CODE >59:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1110 text22 CODE >62:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1112 text22 CODE >63:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1114 text22 CODE >64:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1116 text22 CODE >65:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1118 text22 CODE >66:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-111A text22 CODE >67:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-111C text22 CODE >72:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1132 text22 CODE >73:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1138 text22 CODE >74:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1148 text22 CODE >75:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-114E text22 CODE >76:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-115E text22 CODE >77:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1164 text22 CODE >78:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1174 text22 CODE >79:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-117A text22 CODE >80:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-118A text22 CODE >82:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1194 text22 CODE >83:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11A2 text22 CODE >84:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11AC text22 CODE >85:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11BA text22 CODE >86:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11C4 text22 CODE >87:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11D4 text22 CODE >88:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11DE text22 CODE >89:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11EC text22 CODE >92:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-11F6 text22 CODE >93:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1204 text22 CODE >94:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1BC4 text21 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BC4 text21 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BC6 text21 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BC8 text21 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BCA text21 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BCC text21 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BCE text21 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BD0 text21 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BD2 text21 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BD4 text21 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BD6 text21 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BD8 text21 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BDA text21 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BDC text21 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BDE text21 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BE0 text21 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BE2 text21 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BE4 text21 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BE6 text21 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BE8 text21 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BEC text21 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BEE text21 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BF0 text21 CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BF2 text21 CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BF4 text21 CODE >37:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BF6 text21 CODE >38:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BF8 text21 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BFA text21 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1BFC text21 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1D2E text20 CODE >7:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D2E text20 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D36 text20 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D38 text20 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D40 text20 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D42 text20 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D46 text20 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D4A text20 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D4C text20 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1C66 text19 CODE >112:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C66 text19 CODE >114:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C6A text19 CODE >115:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C7C text19 CODE >114:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1C92 text19 CODE >117:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1B8A text18 CODE >99:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1B8C text18 CODE >102:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1B9C text18 CODE >103:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1BA6 text18 CODE >105:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1BB8 text18 CODE >106:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-1BC2 text18 CODE >107:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
-12FA text17 CODE >47:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-12FA text17 CODE >51:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1310 text17 CODE >52:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1326 text17 CODE >53:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-133C text17 CODE >54:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1352 text17 CODE >55:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1368 text17 CODE >56:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-137E text17 CODE >57:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1394 text17 CODE >58:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-13AA text17 CODE >59:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-13C0 text17 CODE >61:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1A48 text16 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A48 text16 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A5A text16 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A5E text16 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A62 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A68 text16 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A6A text16 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A78 text16 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A8E text16 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A96 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1A9C text16 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1AA2 text16 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1AA2 text16 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1AAA text16 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
-1756 text15 CODE >99:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1756 text15 CODE >101:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-175E text15 CODE >102:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-178C text15 CODE >103:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-17BA text15 CODE >104:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-17EA text15 CODE >105:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-17F6 text15 CODE >106:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
-1D7C text14 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D7C text14 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D7E text14 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D84 text14 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-1D8C text14 CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
-148A text13 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-148A text13 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-148E text13 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-149C text13 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14A4 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14A8 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14B6 text13 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14BE text13 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14C2 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14CA text13 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14DC text13 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14E0 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14E4 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14EA text13 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14EC text13 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-14FA text13 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-1500 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-1516 text13 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-151E text13 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-1520 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-1526 text13 CODE >36:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-152C text13 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-153C text13 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-1544 text13 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-154C text13 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
-154E text12 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-154E text12 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1552 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1560 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1568 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-156C text12 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-157A text12 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1582 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1594 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1598 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-159C text12 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15A2 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15A4 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15B2 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15C8 text12 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15D0 text12 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15D6 text12 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15DC text12 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15EC text12 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15F4 text12 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-15FC text12 CODE >34:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
-1C32 text11 CODE >1:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
-1C32 text11 CODE >3:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
-1C64 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
-1DAE text10 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
-1DAE text10 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
-16AC text9 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-16AC text9 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-16CC text9 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-16D2 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-16D6 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-1724 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-1744 text9 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-1754 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
-1B4E text8 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B4E text8 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B56 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B5A text8 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B68 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B6C text8 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-1B88 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
-17F8 text7 CODE >193:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-17F8 text7 CODE >199:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1806 text7 CODE >200:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1812 text7 CODE >205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1820 text7 CODE >206:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1828 text7 CODE >207:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1828 text7 CODE >208:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1830 text7 CODE >209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1834 text7 CODE >210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1844 text7 CODE >211:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1848 text7 CODE >209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1866 text7 CODE >216:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1874 text7 CODE >218:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1880 text7 CODE >226:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F9C text6 CODE >513:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F9C text6 CODE >520:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FA0 text6 CODE >524:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FB4 text6 CODE >535:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FBC text6 CODE >536:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FCC text6 CODE >541:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FD2 text6 CODE >542:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FFA text6 CODE >543:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-FFA text6 CODE >552:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1002 text6 CODE >553:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1008 text6 CODE >554:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-100C text6 CODE >564:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1012 text6 CODE >565:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1040 text6 CODE >569:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1044 text6 CODE >571:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-104A text6 CODE >572:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1066 text6 CODE >554:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-10CA text6 CODE >576:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-10DA text6 CODE >577:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-10E0 text6 CODE >578:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-10EC text6 CODE >582:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1102 text6 CODE >583:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-15FE text5 CODE >1158:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-15FE text5 CODE >1159:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1606 text5 CODE >1160:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-162C text5 CODE >1161:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1634 text5 CODE >1162:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-164C text5 CODE >1163:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1650 text5 CODE >1166:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1670 text5 CODE >1167:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1678 text5 CODE >1165:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-16A2 text5 CODE >1169:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-16A2 text5 CODE >1170:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-16AA text5 CODE >1171:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E1A text4 CODE >1177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E1A text4 CODE >1201:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E40 text4 CODE >1202:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E48 text4 CODE >1204:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E54 text4 CODE >1205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E58 text4 CODE >1209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E5C text4 CODE >1210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E60 text4 CODE >1220:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E62 text4 CODE >1221:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E6A text4 CODE >1222:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E6E text4 CODE >1243:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E72 text4 CODE >1244:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E76 text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-E94 text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EA2 text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EAC text4 CODE >1210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EBC text4 CODE >1256:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-ED0 text4 CODE >1257:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EDE text4 CODE >1258:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EE0 text4 CODE >1259:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EE8 text4 CODE >1291:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-EF2 text4 CODE >1361:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F32 text4 CODE >1404:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F4A text4 CODE >1406:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F54 text4 CODE >1432:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F68 text4 CODE >1806:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F74 text4 CODE >1811:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-F9A text4 CODE >1814:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B0C text3 CODE >1817:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B0C text3 CODE >1822:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B10 text3 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B14 text3 CODE >1830:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B24 text3 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B44 text3 CODE >1835:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1B4C text3 CODE >1840:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
-1BFE text2 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1BFE text2 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C02 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C06 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C0E text2 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C16 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C26 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1C30 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
-1206 text1 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-1206 text1 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-122E text1 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-1242 text1 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-1258 text1 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-126E text1 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-128C text1 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-1298 text1 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-12C6 text1 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-12CC text1 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-12F0 text1 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-12F8 text1 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
-1AAC text0 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AAC text0 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AB0 text0 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AB4 text0 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AB8 text0 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1ABC text0 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AC0 text0 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AC4 text0 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AC6 text0 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AC8 text0 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1ACA text0 CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1ACC text0 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AD2 text0 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AEA text0 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AF2 text0 CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1AF6 text0 CODE >46:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
-1D0C cinit CODE >10825:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D0C cinit CODE >10827:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D0C cinit CODE >10830:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D0C cinit CODE >10865:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D10 cinit CODE >10866:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D12 cinit CODE >10867:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D12 cinit CODE >10868:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D14 cinit CODE >10869:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D16 cinit CODE >10870:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D18 cinit CODE >10873:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D1C cinit CODE >10874:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D1E cinit CODE >10875:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D1E cinit CODE >10876:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D20 cinit CODE >10877:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D22 cinit CODE >10878:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D24 cinit CODE >10884:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D24 cinit CODE >10886:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D26 cinit CODE >10887:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D28 cinit CODE >10888:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
-1D2A cinit CODE >10889:C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_1.s
+18 intcodelo CODE >16636:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+18 intcodelo CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+26 intcodelo CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+36 intcodelo CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+3A intcodelo CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+3E intcodelo CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+40 intcodelo CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+42 intcodelo CODE >46:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+8 intcode CODE >16729:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+8 intcode CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1CD4 intcode_body CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1CD4 intcode_body CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1CE4 intcode_body CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1CE6 intcode_body CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1CE8 intcode_body CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+18D8 text32 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+18D8 text32 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+18E0 text32 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+18F2 text32 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+18F6 text32 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+18FA text32 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1900 text32 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1902 text32 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1910 text32 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1916 text32 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+192C text32 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1934 text32 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1936 text32 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+193C text32 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1942 text32 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1942 text32 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+194A text32 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwdiv.c
+1C52 text31 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+1C52 text31 CODE >37:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+1C5E text31 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+1C66 text31 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+1C6E text31 CODE >52:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+1C76 text31 CODE >53:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+185A text30 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+185A text30 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+185C text30 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+186A text30 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1870 text30 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1880 text30 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+18B2 text30 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+18CE text30 CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+18D6 text30 CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CBA text29 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CBA text29 CODE >11:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CBC text29 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CC0 text29 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CC4 text29 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CC8 text29 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CCC text29 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CCE text29 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CD0 text29 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CD2 text29 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\ADC.c
+1CEC text28 CODE >7:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1CEC text28 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1CF2 text28 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1CF4 text28 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1CFC text28 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1CFE text28 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C2C text27 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C2C text27 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C2E text27 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C38 text27 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C40 text27 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C42 text27 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C44 text27 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C46 text27 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C48 text27 CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C4C text27 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1C50 text27 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
+1D12 text26 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D12 text26 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D16 text26 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D18 text26 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D1A text26 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D1C text26 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D1E text26 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D20 text26 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D22 text26 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
+1D24 text25 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1D24 text25 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1D26 text25 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1D2E text25 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1D30 text25 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+194C text24 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+194E text24 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1964 text24 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+197A text24 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1990 text24 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+19A6 text24 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+19AA text24 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+19B2 text24 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C00 text23 CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C02 text23 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C0C text23 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C14 text23 CODE >42:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C1C text23 CODE >44:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C22 text23 CODE >45:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1C2A text23 CODE >46:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1298 text22 CODE >51:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1298 text22 CODE >54:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+129A text22 CODE >55:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+129C text22 CODE >56:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+129E text22 CODE >57:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12A0 text22 CODE >58:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12A2 text22 CODE >59:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12A4 text22 CODE >62:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12A6 text22 CODE >63:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12A8 text22 CODE >64:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12AA text22 CODE >65:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12AC text22 CODE >66:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12AE text22 CODE >67:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12B0 text22 CODE >72:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12C6 text22 CODE >73:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12CC text22 CODE >74:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12DC text22 CODE >75:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12E2 text22 CODE >76:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12F2 text22 CODE >77:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+12F8 text22 CODE >78:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1308 text22 CODE >79:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+130E text22 CODE >80:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+131E text22 CODE >82:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1328 text22 CODE >83:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1336 text22 CODE >84:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1340 text22 CODE >85:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+134E text22 CODE >86:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1358 text22 CODE >87:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1368 text22 CODE >88:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1372 text22 CODE >89:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1380 text22 CODE >92:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+138A text22 CODE >93:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1398 text22 CODE >94:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1B30 text21 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B30 text21 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B32 text21 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B34 text21 CODE >14:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B36 text21 CODE >15:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B38 text21 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B3A text21 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B3C text21 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B3E text21 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B40 text21 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B42 text21 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B44 text21 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B46 text21 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B48 text21 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B4A text21 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B4C text21 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B4E text21 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B50 text21 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B52 text21 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B54 text21 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B58 text21 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B5A text21 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B5C text21 CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B5E text21 CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B60 text21 CODE >37:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B62 text21 CODE >38:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B64 text21 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B66 text21 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1B68 text21 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1C9A text20 CODE >7:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1C9A text20 CODE >9:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CA2 text20 CODE >10:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CA4 text20 CODE >12:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CAC text20 CODE >13:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CAE text20 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CB2 text20 CODE >17:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CB6 text20 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1CB8 text20 CODE >19:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1BD2 text19 CODE >112:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1BD2 text19 CODE >114:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1BD6 text19 CODE >115:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1BE8 text19 CODE >114:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1BFE text19 CODE >117:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1AF6 text18 CODE >99:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1AF8 text18 CODE >102:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1B08 text18 CODE >103:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1B12 text18 CODE >105:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1B24 text18 CODE >106:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+1B2E text18 CODE >107:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LCD.c
+139A text17 CODE >47:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+139A text17 CODE >51:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+13B0 text17 CODE >52:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+13C6 text17 CODE >53:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+13DC text17 CODE >54:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+13F2 text17 CODE >55:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1408 text17 CODE >56:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+141E text17 CODE >57:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1434 text17 CODE >58:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+144A text17 CODE >59:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1460 text17 CODE >61:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+19B4 text16 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19B4 text16 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19C6 text16 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19CA text16 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19CE text16 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19D4 text16 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19D6 text16 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19E4 text16 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+19FA text16 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+1A02 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+1A08 text16 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+1A0E text16 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+1A0E text16 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+1A16 text16 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
+172E text15 CODE >99:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+172E text15 CODE >101:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1736 text15 CODE >102:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1764 text15 CODE >103:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1792 text15 CODE >104:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+17C2 text15 CODE >105:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+17CE text15 CODE >106:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\LEDarray.c
+1D00 text14 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1D00 text14 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1D02 text14 CODE >29:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1D08 text14 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1D10 text14 CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
+1462 text13 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1462 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1466 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1474 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+147C text13 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1480 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+148E text13 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1496 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+149A text13 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14A2 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14B4 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14B8 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14BC text13 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14C2 text13 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14C4 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14D2 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14D8 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14EE text13 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14F6 text13 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14F8 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+14FE text13 CODE >36:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1504 text13 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1514 text13 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+151C text13 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1524 text13 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+1526 text12 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1526 text12 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+152A text12 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1538 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1540 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1544 text12 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1552 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+155A text12 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+156C text12 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1570 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1574 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+157A text12 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+157C text12 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+158A text12 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15A0 text12 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15A8 text12 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15AE text12 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15B4 text12 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15C4 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15CC text12 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+15D4 text12 CODE >34:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+1B9E text11 CODE >1:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+1B9E text11 CODE >3:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+1BD0 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+1D32 text10 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
+1D32 text10 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
+1684 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+1684 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+16A4 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+16AA text9 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+16AE text9 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+16FC text9 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+171C text9 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+172C text9 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+1ABA text8 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1ABA text8 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1AC2 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1AC6 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1AD4 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1AD8 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+1AF4 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+17D0 text7 CODE >193:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+17D0 text7 CODE >199:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+17DE text7 CODE >200:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+17EA text7 CODE >205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+17F8 text7 CODE >206:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1800 text7 CODE >207:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1800 text7 CODE >208:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1808 text7 CODE >209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+180C text7 CODE >210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+181C text7 CODE >211:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1820 text7 CODE >209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+183E text7 CODE >216:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+184C text7 CODE >218:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1858 text7 CODE >226:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1130 text6 CODE >513:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1130 text6 CODE >520:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1134 text6 CODE >524:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1148 text6 CODE >535:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1150 text6 CODE >536:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1160 text6 CODE >541:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1166 text6 CODE >542:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+118E text6 CODE >543:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+118E text6 CODE >552:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1196 text6 CODE >553:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+119C text6 CODE >554:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11A0 text6 CODE >564:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11A6 text6 CODE >565:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11D4 text6 CODE >569:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11D8 text6 CODE >571:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11DE text6 CODE >572:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+11FA text6 CODE >554:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+125E text6 CODE >576:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+126E text6 CODE >577:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1274 text6 CODE >578:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1280 text6 CODE >582:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1296 text6 CODE >583:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+15D6 text5 CODE >1158:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+15D6 text5 CODE >1159:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+15DE text5 CODE >1160:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1604 text5 CODE >1161:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+160C text5 CODE >1162:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1624 text5 CODE >1163:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1628 text5 CODE >1166:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1648 text5 CODE >1167:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1650 text5 CODE >1165:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+167A text5 CODE >1169:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+167A text5 CODE >1170:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1682 text5 CODE >1171:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FAC text4 CODE >1177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FAC text4 CODE >1201:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FD2 text4 CODE >1202:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FDA text4 CODE >1204:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FE6 text4 CODE >1205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FEC text4 CODE >1209:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FF0 text4 CODE >1210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FF4 text4 CODE >1220:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FF6 text4 CODE >1221:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+FFE text4 CODE >1222:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1002 text4 CODE >1243:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1006 text4 CODE >1244:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+100A text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1028 text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1036 text4 CODE >1245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1040 text4 CODE >1210:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1050 text4 CODE >1256:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1064 text4 CODE >1257:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1072 text4 CODE >1258:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1074 text4 CODE >1259:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+107C text4 CODE >1291:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1086 text4 CODE >1361:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+10C6 text4 CODE >1404:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+10DE text4 CODE >1406:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+10E8 text4 CODE >1432:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+10FC text4 CODE >1806:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1108 text4 CODE >1811:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+112E text4 CODE >1814:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1A78 text3 CODE >1817:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1A78 text3 CODE >1822:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1A7C text3 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1A80 text3 CODE >1830:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1A90 text3 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1AB0 text3 CODE >1835:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1AB8 text3 CODE >1840:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1B6A text2 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B6A text2 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B6E text2 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B72 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B7A text2 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B82 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B92 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1B9C text2 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+E28 text1 CODE >16:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E28 text1 CODE >18:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E36 text1 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E5A text1 CODE >21:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E66 text1 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E68 text1 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+E7C text1 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+EA6 text1 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+ED0 text1 CODE >28:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+EFA text1 CODE >30:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+F10 text1 CODE >31:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+F2E text1 CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+F3A text1 CODE >36:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+F68 text1 CODE >38:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+F6E text1 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+FA2 text1 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+FAA text1 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+1A18 text0 CODE >20:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A18 text0 CODE >22:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A1C text0 CODE >23:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A20 text0 CODE >24:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A24 text0 CODE >25:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A28 text0 CODE >26:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A2C text0 CODE >27:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A30 text0 CODE >32:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A32 text0 CODE >33:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A34 text0 CODE >34:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A36 text0 CODE >35:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A38 text0 CODE >39:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A3E text0 CODE >40:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A56 text0 CODE >41:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A5E text0 CODE >43:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1A62 text0 CODE >46:C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
+1C78 cinit CODE >10845:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C78 cinit CODE >10847:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C78 cinit CODE >10850:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C78 cinit CODE >10891:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C7C cinit CODE >10892:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C7E cinit CODE >10893:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C7E cinit CODE >10894:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C80 cinit CODE >10895:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C82 cinit CODE >10896:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C84 cinit CODE >10899:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C88 cinit CODE >10900:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C8A cinit CODE >10901:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C8A cinit CODE >10902:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C8C cinit CODE >10903:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C8E cinit CODE >10904:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C90 cinit CODE >10910:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C90 cinit CODE >10912:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C92 cinit CODE >10913:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C94 cinit CODE >10914:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
+1C96 cinit CODE >10915:C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -567,100 +558,101 @@ F9A text4 CODE >1814:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-___awdiv@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwmod@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv@counter 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwmod@counter 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hspace_0 1DB0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hspace_1 8E 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hspace_0 1D34 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hspace_1 90 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hspace_4 600006 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-?_get16bitTMR0val 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+?_get16bitTMR0val 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?_abs D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LowISR 5C 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_get16bitTMR0val 1D8E 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?_vfprintf 31 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?_abs A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LowISR 52 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_get16bitTMR0val 1D12 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?_vfprintf 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lsmallconst E00 0 SMALLCONST 0 smallconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-_dbuf 60 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_dtoa F9C 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_hour 53 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_main 1AAC 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_prec 4D 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_time 51 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-abs@a D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-btemp 58 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-read_prec_or_width@c F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-read_prec_or_width@n 10 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-pad@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-pad@p 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-start 5C 0 CODE 0 init C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
+___sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+_dbuf 62 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_dtoa 1130 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_hour 52 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_main 1A18 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_prec 60 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_time 56 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_year 4E 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+abs@a A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+btemp 5B 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+read_prec_or_width@c C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+read_prec_or_width@n D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+pad@i 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+pad@p 13 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+start 52 0 CODE 0 init C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-pad@fp 14 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?___wmul 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_Init 1104 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hpowerup 5C 0 CODE 0 powerup dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_DAC_init 1D68 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_vfpfcnvrt F9C 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awmod@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-ttemp5 59 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-ttemp6 5C 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-ttemp7 60 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LEDarray_init 1BC4 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-__end_of_LCD_Init 1206 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-intlevel1 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-intlevel2 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-intlevel3 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
+pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?___wmul 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_Init 1298 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hpowerup 52 0 CODE 0 powerup dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_DAC_init 1CEC 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_vfpfcnvrt 1130 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awmod@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+ttemp5 5C 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+ttemp6 5F 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+ttemp7 63 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LEDarray_init 1B30 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+__end_of_LCD_Init 139A 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+intlevel1 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+intlevel2 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+intlevel3 0 0 CODE 0 text C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_DAC_init 1D7C 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_DAC_init 1D00 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-wtemp8 59 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_sendbyte 1C94 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+wtemp8 5C 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_sendbyte 1C00 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awdiv@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_get16bitTMR0val 1D7C 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_vfpfcnvrt E1A 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@fp 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LEDarray_disp_bin 12FA 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___wmul@multiplicand 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_get16bitTMR0val 1D00 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_vfpfcnvrt FAC 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@fp 18 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LEDarray_disp_bin 139A 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___wmul@multiplicand 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ADRESH F64 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_Interrupts_init 1DA0 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-?_ADC_getval 14 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_Interrupts_init 1D24 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+?_ADC_getval 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of___wmul 1D0C 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of___wmul 1C78 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _CM1CON0bits ED0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _CM1CON1bits ED1 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_ADC_init 1D4E 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hintcodelo 5C 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwmod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of___awdiv 154E 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of___awmod 15FE 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of___lwdiv 1974 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of___lwmod 1AAC 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_ADC_init 1D68 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-get16bitTMR0val@time 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwdiv@quotient 12 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_ADC_init 1CBA 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hintcodelo 52 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwmod@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of___awdiv 1526 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of___awmod 15D6 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of___lwdiv 194C 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of___lwmod 1A18 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_ADC_init 1CD4 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+get16bitTMR0val@time 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwdiv@quotient F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LowISR 18 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LCD_sendbyte 1CC0 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwmod@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_setline 1B8A 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LCD_sendbyte 1C2C 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwmod@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_setline 1AF6 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_Interrupts_init 1D8E 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-start_initialization 1D0C 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_Interrupts_init 1D12 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+start_initialization 1C78 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _TRISAbits F81 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _TRISBbits F82 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -672,17 +664,16 @@ _TRISGbits F87 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.pr
 _TRISHbits F88 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ADREFbits F58 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__pcstackBANK0 8A 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__pcstackBANK0 8C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _IPR0bits E1F 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _IPR2bits E21 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-fputc@fp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-fputs@fp 10 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-ADC_getval@tmpval 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LCD_E_TOG 1DAE 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LEDarray_init 1BFE 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-i2LEDarray_disp_bin@number 1 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@done 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+fputc@fp 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+fputs@fp D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+ADC_getval@tmpval 13 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LCD_E_TOG 1D32 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LEDarray_init 1B6A 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@done 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -714,21 +705,21 @@ __Htext7 0 0 ABS 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.pr
 __Htext8 0 0 ABS 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _CM1PCHbits ED3 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwdiv@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwdiv@counter E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank10 0 0 ABS 0 bank10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank11 0 0 ABS 0 bank11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbank13 0 0 ABS 0 bank13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?_read_prec_or_width D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?_read_prec_or_width A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-__end_of_sprintf 1C32 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_HighISR 19E0 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+__end_of_sprintf 1B9E 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_HighISR 1CEC 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hconfig 300006 0 CONFIG 4 config dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_sendnibble 19E0 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_sendnibble 194C 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -758,51 +749,51 @@ __Ltext7 0 0 ABS 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.pr
 __Ltext8 0 0 ABS 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_E_TOG 1DA0 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_E_TOG 1D24 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _INTCONbits FF2 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hinit 60 0 CODE 0 init dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hinit 56 0 CODE 0 init dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Htemp 59 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Htemp 5C 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Htext 0 0 ABS 0 text dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Labs1 0 0 ABS 0 abs1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ldata 0 0 ABS 0 data dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lheap 0 0 HEAP 7 heap dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Linit 5C 0 CODE 0 init dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Linit 52 0 CODE 0 init dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Ltemp 58 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Ltemp 5B 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___wmul 1CE6 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___wmul 1C52 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-int$flags 58 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+int$flags 5B 0 COMRAM 1 temp dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_Timer0_init 1D2E 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_Timer0_init 1C9A 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_LCD_sendstring 1C66 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_LCD_sendstring 1BD2 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__S0 1DB0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__S1 8E 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__S0 1D34 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__S1 90 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_abs 1C32 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_day 55 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_pad 17F8 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LEDarray_disp_bin@number 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_abs 1B9E 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_day 58 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_pad 17D0 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LEDarray_disp_bin@number 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-sprintf@fmt 36 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_dtoa$2080 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_abs 1C66 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_pad 1882 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LCD_sendbyte@Byte 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-int_func 1974 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LCD_sendbyte@type 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LCD_sendnibble 1A48 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+sprintf@fmt 33 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_dtoa$2132 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_abs 1BD2 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_pad 185A 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LCD_sendbyte@Byte 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+int_func 1CD4 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LCD_sendbyte@type 5 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LCD_sendnibble 19B4 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hramtop E00 0 RAM 0 ramtop dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -832,43 +823,42 @@ __Htext29 0 0 ABS 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.
 __Htext30 0 0 ABS 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Htext31 0 0 ABS 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Htext32 0 0 ABS 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Htext35 0 0 ABS 0 text35 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@fmt 27 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awmod@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@fmt 24 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awmod@counter 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _PIE0bits E29 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _PIE2bits E2B 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LCD_sendstring@string A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LCD_sendstring 1C94 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-pad@buf 15 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext10 1DAE 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext11 1C32 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext12 154E 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext13 148A 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext14 1D7C 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext15 1756 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext16 1A48 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext17 12FA 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext18 1B8A 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext19 1C66 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext20 1D2E 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext21 1BC4 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext22 1104 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext23 1C94 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext24 19E0 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext25 1DA0 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext26 1D8E 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext27 1CC0 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext28 1D68 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext29 1D4E 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext30 1882 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext31 1CE6 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext32 1900 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext35 13C2 0 CODE 0 text35 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awdiv 148A 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awmod 154E 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__pintcode_body 1974 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwdiv 1900 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwmod 1A48 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LCD_sendstring@string 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LCD_sendstring 1C00 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_minute 54 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+pad@buf 12 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext10 1D32 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext11 1B9E 0 CODE 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext12 1526 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext13 1462 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext14 1D00 0 CODE 0 text14 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext15 172E 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext16 19B4 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext17 139A 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext18 1AF6 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext19 1BD2 0 CODE 0 text19 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext20 1C9A 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext21 1B30 0 CODE 0 text21 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext22 1298 0 CODE 0 text22 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext23 1C00 0 CODE 0 text23 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext24 194C 0 CODE 0 text24 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext25 1D24 0 CODE 0 text25 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext26 1D12 0 CODE 0 text26 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext27 1C2C 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext28 1CEC 0 CODE 0 text28 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext29 1CBA 0 CODE 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext30 185A 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext31 1C52 0 CODE 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext32 18D8 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv 1462 0 CODE 0 text13 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awmod 1526 0 CODE 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__pintcode_body 1CD4 0 CODE 0 intcode_body dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwdiv 18D8 0 CODE 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwmod 19B4 0 CODE 0 text16 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -878,7 +868,7 @@ __Lbigram 0 0 ABS 0 bigram dist/default/production\mini-project-alex-dayo-ecm.X.
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___wmul@multiplier 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___wmul@multiplier 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LATAbits F79 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LATBbits F7A 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LATCbits F7B 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -887,77 +877,76 @@ _LATEbits F7D 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.pro
 _LATFbits F7E 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LATGbits F7F 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _LATHbits F80 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_read_prec_or_width 16AC 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_read_prec_or_width 1684 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___lwdiv@divisor F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___lwdiv@divisor C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-_LEDarray_control 1756 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LEDarray_control@temp C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-stacklo 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
+isa$std 1 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+_LEDarray_control 172E 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LEDarray_control@temp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+stacklo 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_disp_time 12FA 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_disp_time FAC 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ADCON0bits F60 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LCD_sendnibble@number 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LCD_sendnibble@number 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__pbssCOMRAM 4B 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LCD_setline 1BC4 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__pbssCOMRAM 4C 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LCD_setline 1B30 0 CODE 0 text18 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _PIR0bits E33 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _PIR2bits E35 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@convarg 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_Comp1_init 1CC0 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@convarg 28 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_Comp1_init 1C2C 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-end_of_initialization 1D24 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_read_prec_or_width 15FE 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+end_of_initialization 1C90 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_read_prec_or_width 15D6 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-i2_LEDarray_disp_bin 13C2 0 CODE 0 text35 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-fputc@c 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-fputs@c 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-fputs@i 12 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-fputs@s F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_disp_time 1206 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_ADC_getval 1882 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awdiv@quotient D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?___awdiv 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?___awmod 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___lwdiv@dividend D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?___lwdiv D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?___lwmod 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfprintf@fmt 32 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+fputc@c 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+fputs@s C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_disp_time E28 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_ADC_getval 185A 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awdiv@quotient A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?___awdiv 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?___awmod 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___lwdiv@dividend A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?___lwdiv A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?___lwmod 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfprintf@fmt 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awmod@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awmod@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lramtop E00 0 RAM 0 ramtop dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_timeString 80 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__pcinit 1D0C 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@ap 28 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@cp 30 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfpfcnvrt@fp 26 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext0 1AAC 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext1 1206 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext2 1BFE 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext3 1B0C 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext4 E1A 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext5 15FE 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext6 F9C 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext7 17F8 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext8 1B4E 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ptext9 16AC 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_timeString 82 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__pcinit 1C78 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@ap 25 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@cp 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfpfcnvrt@fp 23 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext0 1A18 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext1 E28 0 CODE 0 text1 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext2 1B6A 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext3 1A78 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext4 FAC 0 CODE 0 text4 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext5 15D6 0 CODE 0 text5 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext6 1130 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext7 17D0 0 CODE 0 text7 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext8 1ABA 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ptext9 1684 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfprintf@ap 33 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfprintf@fp 31 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-vfprintf@cfmt 34 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfprintf@ap 30 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfprintf@fp 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+vfprintf@cfmt 31 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -981,52 +970,50 @@ __Ltext29 0 0 ABS 0 text29 dist/default/production\mini-project-alex-dayo-ecm.X.
 __Ltext30 0 0 ABS 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext31 0 0 ABS 0 text31 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Ltext32 0 0 ABS 0 text32 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Ltext35 0 0 ABS 0 text35 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-LCD_setline@line A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__ramtop E00 0 RAM 0 ramtop C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-_sprintf 1BFE 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+LCD_setline@line 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__ramtop E00 0 RAM 0 ramtop C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+_sprintf 1B6A 0 CODE 0 text2 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _HighISR 8 0 CODE 0 intcode dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_vfprintf 1B0C 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Lpowerup 5C 0 CODE 0 powerup dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_vfprintf 1A78 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Lpowerup 52 0 CODE 0 powerup dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-sprintf@ap 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+sprintf@ap 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _CM1NCHbits ED2 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __psmallconst E00 0 SMALLCONST 0 smallconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_vfprintf 1B4E 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___heap_lo 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
+__end_of_vfprintf 1ABA 0 CODE 0 text3 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___heap_lo 0 0 ABS 0 - C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
 ___param_bank 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcBsnl0.1\driver_tmp_14.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_14.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of__initialization 1D24 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___awmod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LEDarray_control 17F8 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of__initialization 1C90 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___awmod@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LEDarray_control 17D0 0 CODE 0 text15 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_Comp1_init 1CE6 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_Comp1_init 1C52 0 CODE 0 text27 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_ADC_getval 1900 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_ADC_getval 18D8 0 CODE 0 text30 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __pintcodelo 18 0 CODE 0 intcodelo dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_Timer0_init 1D4E 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_Timer0_init 1CBA 0 CODE 0 text20 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-main@lightString 8A 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+main@lightString 8C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _T0CON0bits FD5 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _T0CON1bits FD6 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-sprintf@f 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-sprintf@s 35 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_dtoa 1104 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_main 1B0C 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+sprintf@f 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+sprintf@s 32 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_dtoa 1298 0 CODE 0 text6 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_main 1A78 0 CODE 0 text0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __pintcode 8 0 CODE 0 intcode dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ADPCH F5F 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_fputc 1756 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_fputs 1B8A 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-?_sprintf 35 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_fputc 172E 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_fputs 1AF6 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+?_sprintf 32 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _TMR0H FD4 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _TMR0L FD3 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_minutes 4F 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_putch 1DB0 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_putch 1D34 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -1035,23 +1022,23 @@ __LRAM 1 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.producti
 __Lbss 0 0 RAM 1 bss dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_flags 57 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_fputc 16AC 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_fputs 1B4E 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_putch 1DAE 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-read_prec_or_width@fmt D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-_width 4B 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_ofi2_LEDarray_disp_bin 148A 0 CODE 0 text35 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__initialization 1D0C 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_flags 5A 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_fputc 1684 0 CODE 0 text9 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_fputs 1ABA 0 CODE 0 text8 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_month 50 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_putch 1D32 0 CODE 0 text10 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+read_prec_or_width@fmt A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+_width 4C 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__initialization 1C78 0 CODE 0 cinit dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-___wmul@product B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__Hsmallconst E1A 0 SMALLCONST 0 smallconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@d 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@i 24 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@p 20 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@s 23 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-dtoa@w 21 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+___wmul@product 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__Hsmallconst E28 0 SMALLCONST 0 smallconst dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@d 19 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@i 21 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@p 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@s 20 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+dtoa@w 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ANSELAbits E92 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 _ANSELBbits E9A 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
@@ -1059,8 +1046,8 @@ _ANSELFbits EB4 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.p
 _ANSELGbits EBC 0 ABS 0 - dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 __Hintcode E 0 CODE 0 intcode dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-read_prec_or_width@ap E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
-__end_of_LEDarray_disp_bin 13C2 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+read_prec_or_width@ap B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-alex-dayo-ecm.X.production.o
+__end_of_LEDarray_disp_bin 1462 0 CODE 0 text17 dist/default/production\mini-project-alex-dayo-ecm.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1085,13 +1072,13 @@ __end_of_LEDarray_disp_bin 13C2 0 CODE 0 text17 dist/default/production\mini-pro
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-intcodelo 0 18 18 48 1
-text4 0 E1A E1A F96 1
-cstackCOMRAM 1 1 1 58 1
+intcodelo 0 18 18 3E 1
+text1 0 E28 E28 F0C 1
+cstackCOMRAM 1 1 1 5B 1
 reset_vec 0 0 0 4 1
-bssBANK0 1 60 60 2E 1
+bssBANK0 1 60 60 30 1
 intcode 0 8 8 6 1
-smallconst 0 E00 E00 1A 1
+smallconst 0 E00 E00 28 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

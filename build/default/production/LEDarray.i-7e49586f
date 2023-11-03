@@ -1,4 +1,4 @@
-# 1 "interrupts.c"
+# 1 "LEDarray.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "interrupts.c" 2
+# 1 "LEDarray.c" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -24086,20 +24086,7 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 2 3
-# 1 "interrupts.c" 2
-
-# 1 "./interrupts.h" 1
-
-
-
-
-
-
-
-void Interrupts_init(void);
-void __attribute__((picinterrupt(("high_priority")))) HighISR();
-void __attribute__((picinterrupt(("low_priority")))) LowISR();
-# 2 "interrupts.c" 2
+# 1 "LEDarray.c" 2
 
 # 1 "./LEDarray.h" 1
 
@@ -24115,48 +24102,109 @@ void LEDarray_disp_bin(unsigned int number);
 void LEDarray_disp_dec(unsigned int number);
 void LEDarray_disp_PPM(unsigned int number, unsigned int max);
 void LEDarray_control(void);
-# 3 "interrupts.c" 2
+# 2 "LEDarray.c" 2
+
+
+
+volatile unsigned int day;
 
 
 
 
-
-
-void Interrupts_init(void)
+void LEDarray_init(void)
 {
+    TRISGbits.TRISG0 = 0;
+ TRISGbits.TRISG1 = 0;
+    TRISAbits.TRISA2 = 0;
+    TRISFbits.TRISF6 = 0;
+    TRISAbits.TRISA4 = 0;
+    TRISAbits.TRISA5 = 0;
+    TRISFbits.TRISF0 = 0;
+    TRISBbits.TRISB0 = 0;
+    TRISBbits.TRISB1 = 0;
 
+    LATGbits.LATG0 = 0;
+    LATGbits.LATG1 = 0;
+    LATAbits.LATA2 = 0;
+    LATFbits.LATF6 = 0;
+    LATAbits.LATA4 = 0;
+    LATAbits.LATA5 = 0;
+    LATFbits.LATF0 = 0;
+    LATBbits.LATB0 = 0;
+    LATBbits.LATB1 = 0;
 
-    PIE0bits.TMR0IE=1;
-    PIE2bits.C1IE=1;
-
-    IPR2bits.C1IP = 1;
-    IPR0bits.TMR0IP = 0;
-    INTCONbits.IPEN=1;
-    INTCONbits.GIE=1;
-    INTCONbits.PEIE = 1;
+    ANSELGbits.ANSELG0=0;
+    ANSELGbits.ANSELG1=0;
+    ANSELAbits.ANSELA2=0;
+    ANSELFbits.ANSELF6=0;
+    ANSELAbits.ANSELA4=0;
+    ANSELAbits.ANSELA5=0;
+    ANSELFbits.ANSELF0=0;
+    ANSELBbits.ANSELB0=0;
+    ANSELBbits.ANSELB1=0;
 }
 
 
 
 
 
-void __attribute__((picinterrupt(("high_priority")))) HighISR()
+void LEDarray_disp_bin(unsigned int number)
 {
 
-    if(PIR2bits.C1IF){
-        LATDbits.LATD7 = 1;
-        PIR2bits.C1IF=0;
-    }
+
+    if (number & 0b000000001) LATGbits.LATG0 = 1; else LATGbits.LATG0 = 0;
+    if (number & 0b000000010) LATGbits.LATG1 = 1; else LATGbits.LATG1 = 0;
+    if (number & 0b000000100) LATAbits.LATA2 = 1; else LATAbits.LATA2 = 0;
+    if (number & 0b000001000) LATFbits.LATF6 = 1; else LATFbits.LATF6 = 0;
+    if (number & 0b000010000) LATAbits.LATA4 = 1; else LATAbits.LATA4 = 0;
+    if (number & 0b000100000) LATAbits.LATA5 = 1; else LATAbits.LATA5 = 0;
+    if (number & 0b001000000) LATFbits.LATF0 = 1; else LATFbits.LATF0 = 0;
+    if (number & 0b010000000) LATBbits.LATB0 = 1; else LATBbits.LATB0 = 0;
+    if (number & 0b100000000) LATBbits.LATB1 = 1; else LATBbits.LATB1 = 0;
+
 }
 
-void __attribute__((picinterrupt(("low_priority")))) LowISR()
+
+
+
+
+
+void LEDarray_disp_dec(unsigned int number)
 {
+ unsigned int disp_val = 1;
 
-    if(PIR0bits.TMR0IF){
-        TMR0H=0b00001011;
-        TMR0L=0b11011011;
 
-        LATHbits.LATH3 = 1;
-        PIR0bits.TMR0IF=0;
-    }
+    disp_val = (disp_val << (number + 1)) - 1;
+
+ LEDarray_disp_bin(disp_val);
+}
+
+
+
+
+
+
+
+void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
+{
+ unsigned int cur_disp_val=1;
+    unsigned int max_disp_val=1;
+    unsigned int disp_val;
+
+
+ cur_disp_val = (cur_disp_val << (cur_val + 1)) - 1;
+    max_disp_val = (max_disp_val << max);
+    disp_val = cur_disp_val + max_disp_val;
+    if (cur_disp_val >= max_disp_val) {disp_val = cur_disp_val;}
+
+ LEDarray_disp_bin(disp_val);
+}
+
+void LEDarray_control(void)
+{
+    unsigned int temp = 0;
+    if (day % 3 == 0) {temp = 0b001001001;}
+    if (day % 3 == 1) {temp = 0b010010010;}
+    if (day % 3 == 2) {temp = 0b100100100;}
+    LEDarray_disp_bin(temp);
 }

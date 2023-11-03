@@ -14,12 +14,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28508
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28508: extern volatile LATDbits_t LATDbits __attribute__((address(0xF7C)));
 [v _LATDbits `VS1348 ~T0 @X0 0 e@3964 ]
+"10 ./LEDarray.h
+[; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
+[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
+"28912 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28912:     struct {
+[s S1361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1361 . LATH0 LATH1 LATH2 LATH3 ]
+"28918
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28918:     struct {
+[s S1362 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1362 . LH0 LH1 LH2 LH3 ]
+"28924
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28924:     struct {
+[s S1363 :4 `uc 1 :1 `uc 1 ]
+[n S1363 . . LH4 ]
+"28928
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28928:     struct {
+[s S1364 :5 `uc 1 :1 `uc 1 ]
+[n S1364 . . LH5 ]
+"28932
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28932:     struct {
+[s S1365 :6 `uc 1 :1 `uc 1 ]
+[n S1365 . . LH6 ]
+"28936
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28936:     struct {
+[s S1366 :7 `uc 1 :1 `uc 1 ]
+[n S1366 . . LH7 ]
+"28911
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28911: typedef union {
+[u S1360 `S1361 1 `S1362 1 `S1363 1 `S1364 1 `S1365 1 `S1366 1 ]
+[n S1360 . . . . . . . ]
+"28941
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28941: extern volatile LATHbits_t LATHbits __attribute__((address(0xF80)));
+[v _LATHbits `VS1360 ~T0 @X0 0 e@3968 ]
 "13 ./LEDarray.h
 [; ;./LEDarray.h: 13: void LEDarray_control(void);
 [v _LEDarray_control `(v ~T0 @X0 0 ef ]
-"10
-[; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
-[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
 "9 ./timers.h
 [; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
 [v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
@@ -2007,94 +2038,143 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 40592: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 "8 datetime.c
-[; ;datetime.c: 8: extern volatile unsigned int hour = 0;
-[v _hour `Vui ~T0 @X0 1 e ]
-[i _hour
--> -> 0 `i `ui
-]
-"9
-[; ;datetime.c: 9: extern volatile unsigned int day = 0;
+[; ;datetime.c: 8: extern volatile unsigned int day = 0;
 [v _day `Vui ~T0 @X0 1 e ]
 [i _day
 -> -> 0 `i `ui
 ]
-"11
-[; ;datetime.c: 11: unsigned int time = 0;
+"10
+[; ;datetime.c: 10: unsigned int time = 0;
 [v _time `ui ~T0 @X0 1 e ]
 [i _time
 -> -> 0 `i `ui
 ]
+"11
+[; ;datetime.c: 11: unsigned int minute = 0;
+[v _minute `ui ~T0 @X0 1 e ]
+[i _minute
+-> -> 0 `i `ui
+]
 "12
-[; ;datetime.c: 12: unsigned int minutes = 0;
-[v _minutes `ui ~T0 @X0 1 e ]
-[i _minutes
+[; ;datetime.c: 12: unsigned int hour = 0;
+[v _hour `ui ~T0 @X0 1 e ]
+[i _hour
 -> -> 0 `i `ui
 ]
 "13
-[; ;datetime.c: 13: char timeString[10];
-[v _timeString `uc ~T0 @X0 -> 10 `i e ]
+[; ;datetime.c: 13: unsigned int month = 0;
+[v _month `ui ~T0 @X0 1 e ]
+[i _month
+-> -> 0 `i `ui
+]
 "14
-[; ;datetime.c: 14: void disp_time(void)
-[v _disp_time `(v ~T0 @X0 1 ef ]
+[; ;datetime.c: 14: unsigned int year = 0;
+[v _year `ui ~T0 @X0 1 e ]
+[i _year
+-> -> 0 `i `ui
+]
 "15
-[; ;datetime.c: 15: {
+[; ;datetime.c: 15: char timeString[10];
+[v _timeString `uc ~T0 @X0 -> 10 `i e ]
+"16
+[; ;datetime.c: 16: void disp_time(void)
+[v _disp_time `(v ~T0 @X0 1 ef ]
+"17
+[; ;datetime.c: 17: {
 {
 [e :U _disp_time ]
 [f ]
-"16
-[; ;datetime.c: 16:     if (hour == 24) {hour = 0; day = day + 1;}
-[e $ ! == _hour -> -> 24 `i `ui 2018  ]
+"18
+[; ;datetime.c: 18:     if (LATDbits.LATD7)
+[e $ ! != -> . . _LATDbits 0 7 `i -> 0 `i 2018  ]
+"19
+[; ;datetime.c: 19:     {
+{
+"20
+[; ;datetime.c: 20:         if (hour > 12) {LEDarray_disp_bin(0b111111111);}
+[e $ ! > _hour -> -> 12 `i `ui 2019  ]
+{
+[e ( _LEDarray_disp_bin (1 -> -> 511 `i `ui ]
+}
+[e $U 2020  ]
+"21
+[; ;datetime.c: 21:         else {LEDarray_disp_bin(0b000000000);}
+[e :U 2019 ]
+{
+[e ( _LEDarray_disp_bin (1 -> -> 0 `i `ui ]
+}
+[e :U 2020 ]
+"22
+[; ;datetime.c: 22:         LATDbits.LATD7 = 0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"23
+[; ;datetime.c: 23:     }
+}
+[e :U 2018 ]
+"25
+[; ;datetime.c: 25:     if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
+[e $ ! != -> . . _LATHbits 0 3 `i -> 0 `i 2021  ]
+{
+[e ++ _hour -> -> 1 `i `ui ]
+[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 2021 ]
+"26
+[; ;datetime.c: 26:     if (hour >= 24) {hour = 0; day = day + 1;}
+[e $ ! >= _hour -> -> 24 `i `ui 2022  ]
 {
 [e = _hour -> -> 0 `i `ui ]
 [e = _day + _day -> -> 1 `i `ui ]
 }
-[e :U 2018 ]
-"17
-[; ;datetime.c: 17:     if (hour == 1) {LATDbits.LATD7 = 0;}
-[e $ ! == _hour -> -> 1 `i `ui 2019  ]
+[e :U 2022 ]
+"27
+[; ;datetime.c: 27:     if (day >= 30) {day = 1; month = month + 1;}
+[e $ ! >= _day -> -> 30 `i `ui 2023  ]
 {
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+[e = _day -> -> 1 `i `ui ]
+[e = _month + _month -> -> 1 `i `ui ]
 }
-[e :U 2019 ]
-"18
-[; ;datetime.c: 18:     if (hour == 5) {LATDbits.LATD7 = 1;}
-[e $ ! == _hour -> -> 5 `i `ui 2020  ]
+[e :U 2023 ]
+"28
+[; ;datetime.c: 28:     if (month >= 13) {month = 1; year = year + 1;}
+[e $ ! >= _month -> -> 13 `i `ui 2024  ]
 {
-[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+[e = _month -> -> 1 `i `ui ]
+[e = _year + _year -> -> 1 `i `ui ]
 }
-[e :U 2020 ]
-"19
-[; ;datetime.c: 19:     if (hour == 1) {LEDarray_control();}
-[e $ ! == _hour -> -> 1 `i `ui 2021  ]
+[e :U 2024 ]
+"30
+[; ;datetime.c: 30:     if (hour == 1) {LEDarray_control();}
+[e $ ! == _hour -> -> 1 `i `ui 2025  ]
 {
 [e ( _LEDarray_control ..  ]
 }
-[e :U 2021 ]
-"20
-[; ;datetime.c: 20:     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
-[e $ ! == _hour -> -> 5 `i `ui 2022  ]
+[e :U 2025 ]
+"31
+[; ;datetime.c: 31:     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
+[e $ ! == _hour -> -> 5 `i `ui 2026  ]
 {
 [e ( _LEDarray_disp_bin (1 -> -> 511 `i `ui ]
 }
-[e :U 2022 ]
-"22
-[; ;datetime.c: 22:     time = get16bitTMR0val();
+[e :U 2026 ]
+"35
+[; ;datetime.c: 35:     time = get16bitTMR0val();
 [e = _time ( _get16bitTMR0val ..  ]
-"23
-[; ;datetime.c: 23:     minutes = (time*60)/255;
-[e = _minutes / * _time -> -> 60 `i `ui -> -> 255 `i `ui ]
-"25
-[; ;datetime.c: 25:     LCD_setline(2);
+"36
+[; ;datetime.c: 36:     minute = (time*60)/255;
+[e = _minute / * _time -> -> 60 `i `ui -> -> 255 `i `ui ]
+"38
+[; ;datetime.c: 38:     LCD_setline(2);
 [e ( _LCD_setline (1 -> -> 2 `i `uc ]
-"26
-[; ;datetime.c: 26:     sprintf(timeString,"%02d %02d %03d",minutes,hour,day);
-[e ( _sprintf (1 , , , (. , &U _timeString :s 1C _minutes _hour _day ]
-"27
-[; ;datetime.c: 27:     LCD_sendstring(timeString);
+"39
+[; ;datetime.c: 39:     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
+[e ( _sprintf (1 , , , , , (. , &U _timeString :s 1C _minute _hour _day _month _year ]
+"40
+[; ;datetime.c: 40:     LCD_sendstring(timeString);
 [e ( _LCD_sendstring (1 &U _timeString ]
-"28
-[; ;datetime.c: 28: }
+"41
+[; ;datetime.c: 41: }
 [e :UE 2017 ]
 }
 [p f _sprintf 8421508 ]
-[a 1C 37 48 50 100 32 37 48 50 100 32 37 48 51 100 0 ]
+[a 1C 37 48 50 100 32 37 48 50 100 32 37 48 50 100 32 37 48 50 100 32 37 48 52 100 0 ]

@@ -24296,24 +24296,37 @@ void LEDarray_control(void);
 # 6 "datetime.c" 2
 
 
-extern volatile unsigned int hour = 0;
 extern volatile unsigned int day = 0;
 
 unsigned int time = 0;
-unsigned int minutes = 0;
+unsigned int minute = 0;
+unsigned int hour = 0;
+unsigned int month = 0;
+unsigned int year = 0;
 char timeString[10];
 void disp_time(void)
 {
-    if (hour == 24) {hour = 0; day = day + 1;}
-    if (hour == 1) {LATDbits.LATD7 = 0;}
-    if (hour == 5) {LATDbits.LATD7 = 1;}
+    if (LATDbits.LATD7)
+    {
+        if (hour > 12) {LEDarray_disp_bin(0b111111111);}
+        else {LEDarray_disp_bin(0b000000000);}
+        LATDbits.LATD7 = 0;
+    }
+
+    if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
+    if (hour >= 24) {hour = 0; day = day + 1;}
+    if (day >= 30) {day = 1; month = month + 1;}
+    if (month >= 13) {month = 1; year = year + 1;}
+
     if (hour == 1) {LEDarray_control();}
     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
 
+
+
     time = get16bitTMR0val();
-    minutes = (time*60)/255;
+    minute = (time*60)/255;
 
     LCD_setline(2);
-    sprintf(timeString,"%02d %02d %03d",minutes,hour,day);
+    sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
     LCD_sendstring(timeString);
 }
