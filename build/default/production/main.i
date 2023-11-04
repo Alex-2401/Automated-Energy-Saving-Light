@@ -24288,7 +24288,6 @@ void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
 void LEDarray_disp_dec(unsigned int number);
 void LEDarray_disp_PPM(unsigned int number, unsigned int max);
-void LEDarray_control(void);
 # 12 "main.c" 2
 
 # 1 "./interrupts.h" 1
@@ -24338,6 +24337,8 @@ unsigned int ADC_getval(void);
 
 
 void disp_time(void);
+unsigned int month_days(unsigned int month, unsigned int year);
+void LEDarray_control(void);
 # 16 "main.c" 2
 
 

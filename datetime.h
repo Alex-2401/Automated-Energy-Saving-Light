@@ -7,5 +7,7 @@
 
 //function prototypes
 void disp_time(void);
+unsigned int month_days(unsigned int month, unsigned int year);
+void LEDarray_control(void);
 
 #endif

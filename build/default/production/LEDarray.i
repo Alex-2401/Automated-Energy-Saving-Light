@@ -24101,12 +24101,9 @@ void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
 void LEDarray_disp_dec(unsigned int number);
 void LEDarray_disp_PPM(unsigned int number, unsigned int max);
-void LEDarray_control(void);
 # 2 "LEDarray.c" 2
 
 
-
-volatile unsigned int day;
 
 
 
@@ -24198,13 +24195,4 @@ void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
     if (cur_disp_val >= max_disp_val) {disp_val = cur_disp_val;}
 
  LEDarray_disp_bin(disp_val);
-}
-
-void LEDarray_control(void)
-{
-    unsigned int temp = 0;
-    if (day % 3 == 0) {temp = 0b001001001;}
-    if (day % 3 == 1) {temp = 0b010010010;}
-    if (day % 3 == 2) {temp = 0b100100100;}
-    LEDarray_disp_bin(temp);
 }

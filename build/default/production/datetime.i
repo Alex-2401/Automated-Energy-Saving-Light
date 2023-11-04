@@ -24252,6 +24252,8 @@ char *tempnam(const char *, const char *);
 
 
 void disp_time(void);
+unsigned int month_days(unsigned int month, unsigned int year);
+void LEDarray_control(void);
 # 3 "datetime.c" 2
 
 # 1 "./LCD.h" 1
@@ -24292,20 +24294,40 @@ void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
 void LEDarray_disp_dec(unsigned int number);
 void LEDarray_disp_PPM(unsigned int number, unsigned int max);
-void LEDarray_control(void);
 # 6 "datetime.c" 2
 
 
-extern volatile unsigned int day = 0;
-
-unsigned int time = 0;
 unsigned int minute = 0;
 unsigned int hour = 0;
-unsigned int month = 0;
-unsigned int year = 0;
+unsigned int day = 28;
+unsigned int month = 2;
+unsigned int year = 2024;
 char timeString[10];
-void disp_time(void)
+
+unsigned int month_days(unsigned int month, unsigned int year)
 {
+    unsigned int monthDays;
+
+    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+    {
+        monthDays = 31;
+    }
+    else if (month == 4 || month == 6 || month == 9 || month == 11)
+    {
+        monthDays = 30;
+    }
+    else if (month == 2)
+    {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        {
+            monthDays = 29;
+        }
+        else {monthDays = 28;}
+    }
+    return monthDays;
+}
+
+void disp_time(void) {
     if (LATDbits.LATD7)
     {
         if (hour > 12) {LEDarray_disp_bin(0b111111111);}
@@ -24314,19 +24336,25 @@ void disp_time(void)
     }
 
     if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
-    if (hour >= 24) {hour = 0; day = day + 1;}
-    if (day >= 30) {day = 1; month = month + 1;}
-    if (month >= 13) {month = 1; year = year + 1;}
+    if (hour >= 24) {hour = 0; day++;}
+    if (day > month_days(month,year)) {day = 1; month++;}
+    if (month > 12) {month = 1; year++;}
 
     if (hour == 1) {LEDarray_control();}
     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
 
-
-
-    time = get16bitTMR0val();
-    minute = (time*60)/255;
+    minute = (get16bitTMR0val()*60)/255;
 
     LCD_setline(2);
     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
     LCD_sendstring(timeString);
+}
+
+void LEDarray_control(void)
+{
+    unsigned int temp = 0;
+    if (day % 3 == 0) {temp = 0b001001001;}
+    if (day % 3 == 1) {temp = 0b010010010;}
+    if (day % 3 == 2) {temp = 0b100100100;}
+    LEDarray_disp_bin(temp);
 }

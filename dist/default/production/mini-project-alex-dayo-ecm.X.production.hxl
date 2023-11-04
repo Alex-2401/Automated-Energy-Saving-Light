@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o
+ C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o
  -Odist/default/production\mini-project-alex-dayo-ecm.X.production.hex
  -logfile=dist/default/production\mini-project-alex-dayo-ecm.X.production.hxl
  -addressing=1
@@ -9,23 +9,23 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
-  8h - Dh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
-  18h - 55h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
-  E00h - 1D33h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
-  300000h - 300001h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
-  300004h - 300005h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
+  8h - Dh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
+  18h - 55h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
+  E00h - 1EDBh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
+  300000h - 300001h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
+  300004h - 300005h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   Eh - 17h
   56h - DFFh
-  1D34h - 2FFFFFh
+  1EDCh - 2FFFFFh
   300002h - 300003h
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiok.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\ALEXPI~1\AppData\Local\Temp\xcAs9rs.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -279,7 +279,33 @@
 00001D00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001D10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001D20 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001D30 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
+00001D30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001DF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E20 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001E90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001EA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001EB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001EC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001ED0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
 ----------------------------------------------------------
 00300000 | H1 H1 -- -- H1 H1 -- -- -- -- -- -- -- -- -- --
 00300010 | --

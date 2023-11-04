@@ -2111,8 +2111,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC.c: 34:     tmpval = 255 - tmpval;
 [e = _tmpval - -> -> 255 `i `ui _tmpval ]
 "40
-[; ;ADC.c: 40:     tmpval = ((tmpval - 39 + 2) *255)/(153-39+2) ;
-[e = _tmpval / * + - _tmpval -> -> 39 `i `ui -> -> 2 `i `ui -> -> 255 `i `ui -> + - -> 153 `i -> 39 `i -> 2 `i `ui ]
+[; ;ADC.c: 40:     tmpval = ((tmpval - 39 + 2) *60)/(153-39+2) ;
+[e = _tmpval / * + - _tmpval -> -> 39 `i `ui -> -> 2 `i `ui -> -> 60 `i `ui -> + - -> 153 `i -> 39 `i -> 2 `i `ui ]
 "41
 [; ;ADC.c: 41:     if (tmpval > 512) {tmpval = 0;}
 [e $ ! > _tmpval -> -> 512 `i `ui 2020  ]
