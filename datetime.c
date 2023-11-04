@@ -6,9 +6,10 @@
 #include "LEDarray.h"
 
 unsigned int minute = 0;
-unsigned int hour = 0;
-unsigned int day = 28;
-unsigned int month = 2;
+unsigned int hour = 16;
+unsigned int day = 30;
+unsigned int weekday = 6; //Monday = 1, Tuesday = 2, Wednesday = 3, Thurday = 4, Friday = 5, Saturday = 6, Sunday = 7
+unsigned int month = 3;
 unsigned int year = 2024;
 char timeString[10];
 
@@ -43,19 +44,37 @@ void disp_time(void) {
         LATDbits.LATD7 = 0;
     }
     
-    if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
-    if (hour >= 24) {hour = 0; day++;}      //checks if a day has passed
+    if (LATDbits.LATD4) {hour++; LATDbits.LATD4 = 0;}
+    if (hour > 23) {hour = 0; day++; weekday++;}      //checks if a day has passed
+    if (weekday > 7) {weekday = 1;}     //checks if week has passed
     if (day > month_days(month,year)) {day = 1; month++;}      //checks if a month has passed
     if (month > 12) {month = 1; year++;}    //checks if a year has passed
     
     if (hour == 1) {LEDarray_control();}              //1am check
     if (hour == 5) {LEDarray_disp_bin(0b111111111);}  //5am check
     
+    if ((month == 3 || month == 10) && weekday == 7 && day > 24) {hour = DST_adjust(month,hour);}
+    
     minute = (get16bitTMR0val()*60)/255;    //getting timer time and converting to minutes 
     
     LCD_setline(2); //Set Line 2
     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);  //displaying time
     LCD_sendstring(timeString);
+}
+
+unsigned int DST_adjust(unsigned int month,unsigned int hour)
+{
+    if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
+    {
+        hour = 2;
+        LATHbits.LATH3 = 1;
+    }
+    if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
+    {
+        hour = 1;
+        LATHbits.LATH3 = 0;
+    }
+    return hour;
 }
 
 void LEDarray_control(void) //if i put this function her instead of in LEDarray.c i can remove a global variable

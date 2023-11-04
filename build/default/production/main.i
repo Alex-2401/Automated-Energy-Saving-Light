@@ -24339,6 +24339,7 @@ unsigned int ADC_getval(void);
 void disp_time(void);
 unsigned int month_days(unsigned int month, unsigned int year);
 void LEDarray_control(void);
+unsigned int DST_adjust(unsigned int month,unsigned int hour);
 # 16 "main.c" 2
 
 
@@ -24358,8 +24359,11 @@ void main(void) {
 
     LATHbits.LATH3=0;
     TRISHbits.TRISH3=0;
+
     LATDbits.LATD7=0;
     TRISDbits.TRISD7=0;
+    LATDbits.LATD4=0;
+    TRISDbits.TRISD4=0;
 
     while (1)
     {
@@ -24368,7 +24372,6 @@ void main(void) {
         LCD_sendstring(lightString);
 
         disp_time();
-
 
         _delay((unsigned long)((10)*(64000000/4000.0)));
     }

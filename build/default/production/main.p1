@@ -2119,41 +2119,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "33
 [; ;main.c: 33:     TRISHbits.TRISH3=0;
 [e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
-"34
-[; ;main.c: 34:     LATDbits.LATD7=0;
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
 "35
-[; ;main.c: 35:     TRISDbits.TRISD7=0;
+[; ;main.c: 35:     LATDbits.LATD7=0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"36
+[; ;main.c: 36:     TRISDbits.TRISD7=0;
 [e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
 "37
-[; ;main.c: 37:     while (1)
-[e :U 2019 ]
+[; ;main.c: 37:     LATDbits.LATD4=0;
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
 "38
-[; ;main.c: 38:     {
-{
-"39
-[; ;main.c: 39:         LCD_setline(1);
-[e ( _LCD_setline (1 -> -> 1 `i `uc ]
+[; ;main.c: 38:     TRISDbits.TRISD4=0;
+[e = . . _TRISDbits 0 4 -> -> 0 `i `uc ]
 "40
-[; ;main.c: 40:         sprintf(lightString,"%03d",ADC_getval());
-[e ( _sprintf (1 , (. , &U _lightString :s 1C ( _ADC_getval ..  ]
+[; ;main.c: 40:     while (1)
+[e :U 2019 ]
 "41
-[; ;main.c: 41:         LCD_sendstring(lightString);
-[e ( _LCD_sendstring (1 &U _lightString ]
+[; ;main.c: 41:     {
+{
+"42
+[; ;main.c: 42:         LCD_setline(1);
+[e ( _LCD_setline (1 -> -> 1 `i `uc ]
 "43
-[; ;main.c: 43:         disp_time();
-[e ( _disp_time ..  ]
+[; ;main.c: 43:         sprintf(lightString,"%03d",ADC_getval());
+[e ( _sprintf (1 , (. , &U _lightString :s 1C ( _ADC_getval ..  ]
+"44
+[; ;main.c: 44:         LCD_sendstring(lightString);
+[e ( _LCD_sendstring (1 &U _lightString ]
 "46
-[; ;main.c: 46:         _delay((unsigned long)((10)*(64000000/4000.0)));
+[; ;main.c: 46:         disp_time();
+[e ( _disp_time ..  ]
+"48
+[; ;main.c: 48:         _delay((unsigned long)((10)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"47
-[; ;main.c: 47:     }
+"49
+[; ;main.c: 49:     }
 }
 [e :U 2018 ]
 [e $U 2019  ]
 [e :U 2020 ]
-"48
-[; ;main.c: 48: }
+"50
+[; ;main.c: 50: }
 [e :UE 2017 ]
 }
 [p f _sprintf 8421508 ]

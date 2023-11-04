@@ -24254,6 +24254,7 @@ char *tempnam(const char *, const char *);
 void disp_time(void);
 unsigned int month_days(unsigned int month, unsigned int year);
 void LEDarray_control(void);
+unsigned int DST_adjust(unsigned int month,unsigned int hour);
 # 3 "datetime.c" 2
 
 # 1 "./LCD.h" 1
@@ -24298,9 +24299,10 @@ void LEDarray_disp_PPM(unsigned int number, unsigned int max);
 
 
 unsigned int minute = 0;
-unsigned int hour = 0;
-unsigned int day = 28;
-unsigned int month = 2;
+unsigned int hour = 16;
+unsigned int day = 30;
+unsigned int weekday = 6;
+unsigned int month = 3;
 unsigned int year = 2024;
 char timeString[10];
 
@@ -24335,19 +24337,37 @@ void disp_time(void) {
         LATDbits.LATD7 = 0;
     }
 
-    if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
-    if (hour >= 24) {hour = 0; day++;}
+    if (LATDbits.LATD4) {hour++; LATDbits.LATD4 = 0;}
+    if (hour > 23) {hour = 0; day++; weekday++;}
+    if (weekday > 7) {weekday = 1;}
     if (day > month_days(month,year)) {day = 1; month++;}
     if (month > 12) {month = 1; year++;}
 
     if (hour == 1) {LEDarray_control();}
     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
 
+    if ((month == 3 || month == 10) && weekday == 7 && day > 24) {hour = DST_adjust(month,hour);}
+
     minute = (get16bitTMR0val()*60)/255;
 
     LCD_setline(2);
     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
     LCD_sendstring(timeString);
+}
+
+unsigned int DST_adjust(unsigned int month,unsigned int hour)
+{
+    if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
+    {
+        hour = 2;
+        LATHbits.LATH3 = 1;
+    }
+    if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
+    {
+        hour = 1;
+        LATHbits.LATH3 = 0;
+    }
+    return hour;
 }
 
 void LEDarray_control(void)

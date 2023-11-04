@@ -40,7 +40,7 @@ void __interrupt(low_priority) LowISR()
         TMR0H=0b00001011;    //setting it to first half (MSBs)
         TMR0L=0b11011011;    //setting it to second half (LSBs)
         //this will happen for every overflow
-        LATHbits.LATH3 = 1;
+        LATDbits.LATD4 = 1;
         PIR0bits.TMR0IF=0; 	//clear the interrupt flag!  
     }
 }

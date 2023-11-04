@@ -17,6 +17,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10 ./LEDarray.h
 [; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
 [v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
+"11 ./datetime.h
+[; ;./datetime.h: 11: void LEDarray_control(void);
+[v _LEDarray_control `(v ~T0 @X0 0 ef ]
+"12
+[; ;./datetime.h: 12: unsigned int DST_adjust(unsigned int month,unsigned int hour);
+[v _DST_adjust `(ui ~T0 @X0 0 ef2`ui`ui ]
+"9 ./timers.h
+[; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
+[v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
+"21 ./LCD.h
+[; ;./LCD.h: 21: void LCD_setline (char line);
+[v _LCD_setline `(v ~T0 @X0 0 ef1`uc ]
+"121 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"22 ./LCD.h
+[; ;./LCD.h: 22: void LCD_sendstring(char *string);
+[v _LCD_sendstring `(v ~T0 @X0 0 ef1`*uc ]
 "28912 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28912:     struct {
 [s S1361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -48,21 +66,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28941
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 28941: extern volatile LATHbits_t LATHbits __attribute__((address(0xF80)));
 [v _LATHbits `VS1360 ~T0 @X0 0 e@3968 ]
-"11 ./datetime.h
-[; ;./datetime.h: 11: void LEDarray_control(void);
-[v _LEDarray_control `(v ~T0 @X0 0 ef ]
-"9 ./timers.h
-[; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
-[v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
-"21 ./LCD.h
-[; ;./LCD.h: 21: void LCD_setline (char line);
-[v _LCD_setline `(v ~T0 @X0 0 ef1`uc ]
-"121 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"22 ./LCD.h
-[; ;./LCD.h: 22: void LCD_sendstring(char *string);
-[v _LCD_sendstring `(v ~T0 @X0 0 ef1`*uc ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 54: __asm("PPSLOCK equ 0DEFh");
 [; <" PPSLOCK equ 0DEFh ;# ">
@@ -2044,251 +2047,326 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `ui
 ]
 "9
-[; ;datetime.c: 9: unsigned int hour = 0;
+[; ;datetime.c: 9: unsigned int hour = 16;
 [v _hour `ui ~T0 @X0 1 e ]
 [i _hour
--> -> 0 `i `ui
+-> -> 16 `i `ui
 ]
 "10
-[; ;datetime.c: 10: unsigned int day = 28;
+[; ;datetime.c: 10: unsigned int day = 30;
 [v _day `ui ~T0 @X0 1 e ]
 [i _day
--> -> 28 `i `ui
+-> -> 30 `i `ui
 ]
 "11
-[; ;datetime.c: 11: unsigned int month = 2;
-[v _month `ui ~T0 @X0 1 e ]
-[i _month
--> -> 2 `i `ui
+[; ;datetime.c: 11: unsigned int weekday = 6;
+[v _weekday `ui ~T0 @X0 1 e ]
+[i _weekday
+-> -> 6 `i `ui
 ]
 "12
-[; ;datetime.c: 12: unsigned int year = 2024;
+[; ;datetime.c: 12: unsigned int month = 3;
+[v _month `ui ~T0 @X0 1 e ]
+[i _month
+-> -> 3 `i `ui
+]
+"13
+[; ;datetime.c: 13: unsigned int year = 2024;
 [v _year `ui ~T0 @X0 1 e ]
 [i _year
 -> -> 2024 `i `ui
 ]
-"13
-[; ;datetime.c: 13: char timeString[10];
+"14
+[; ;datetime.c: 14: char timeString[10];
 [v _timeString `uc ~T0 @X0 -> 10 `i e ]
-"15
-[; ;datetime.c: 15: unsigned int month_days(unsigned int month, unsigned int year)
-[v _month_days `(ui ~T0 @X0 1 ef2`ui`ui ]
 "16
-[; ;datetime.c: 16: {
+[; ;datetime.c: 16: unsigned int month_days(unsigned int month, unsigned int year)
+[v _month_days `(ui ~T0 @X0 1 ef2`ui`ui ]
+"17
+[; ;datetime.c: 17: {
 {
 [e :U _month_days ]
-"15
-[; ;datetime.c: 15: unsigned int month_days(unsigned int month, unsigned int year)
+"16
+[; ;datetime.c: 16: unsigned int month_days(unsigned int month, unsigned int year)
 [v _month `ui ~T0 @X0 1 r1 ]
 [v _year `ui ~T0 @X0 1 r2 ]
-"16
-[; ;datetime.c: 16: {
-[f ]
 "17
-[; ;datetime.c: 17:     unsigned int monthDays;
+[; ;datetime.c: 17: {
+[f ]
+"18
+[; ;datetime.c: 18:     unsigned int monthDays;
 [v _monthDays `ui ~T0 @X0 1 a ]
-"19
-[; ;datetime.c: 19:     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
-[e $ ! || || || || || || == _month -> -> 1 `i `ui == _month -> -> 3 `i `ui == _month -> -> 5 `i `ui == _month -> -> 7 `i `ui == _month -> -> 8 `i `ui == _month -> -> 10 `i `ui == _month -> -> 12 `i `ui 2018  ]
 "20
-[; ;datetime.c: 20:     {
-{
+[; ;datetime.c: 20:     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+[e $ ! || || || || || || == _month -> -> 1 `i `ui == _month -> -> 3 `i `ui == _month -> -> 5 `i `ui == _month -> -> 7 `i `ui == _month -> -> 8 `i `ui == _month -> -> 10 `i `ui == _month -> -> 12 `i `ui 2018  ]
 "21
-[; ;datetime.c: 21:         monthDays = 31;
-[e = _monthDays -> -> 31 `i `ui ]
+[; ;datetime.c: 21:     {
+{
 "22
-[; ;datetime.c: 22:     }
+[; ;datetime.c: 22:         monthDays = 31;
+[e = _monthDays -> -> 31 `i `ui ]
+"23
+[; ;datetime.c: 23:     }
 }
 [e $U 2019  ]
-"23
-[; ;datetime.c: 23:     else if (month == 4 || month == 6 || month == 9 || month == 11)
+"24
+[; ;datetime.c: 24:     else if (month == 4 || month == 6 || month == 9 || month == 11)
 [e :U 2018 ]
 [e $ ! || || || == _month -> -> 4 `i `ui == _month -> -> 6 `i `ui == _month -> -> 9 `i `ui == _month -> -> 11 `i `ui 2020  ]
-"24
-[; ;datetime.c: 24:     {
-{
 "25
-[; ;datetime.c: 25:         monthDays = 30;
-[e = _monthDays -> -> 30 `i `ui ]
+[; ;datetime.c: 25:     {
+{
 "26
-[; ;datetime.c: 26:     }
+[; ;datetime.c: 26:         monthDays = 30;
+[e = _monthDays -> -> 30 `i `ui ]
+"27
+[; ;datetime.c: 27:     }
 }
 [e $U 2021  ]
-"27
-[; ;datetime.c: 27:     else if (month == 2)
+"28
+[; ;datetime.c: 28:     else if (month == 2)
 [e :U 2020 ]
 [e $ ! == _month -> -> 2 `i `ui 2022  ]
-"28
-[; ;datetime.c: 28:     {
-{
 "29
-[; ;datetime.c: 29:         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-[e $ ! || && == % _year -> -> 4 `i `ui -> -> 0 `i `ui != % _year -> -> 100 `i `ui -> -> 0 `i `ui == % _year -> -> 400 `i `ui -> -> 0 `i `ui 2023  ]
-"30
-[; ;datetime.c: 30:         {
+[; ;datetime.c: 29:     {
 {
+"30
+[; ;datetime.c: 30:         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+[e $ ! || && == % _year -> -> 4 `i `ui -> -> 0 `i `ui != % _year -> -> 100 `i `ui -> -> 0 `i `ui == % _year -> -> 400 `i `ui -> -> 0 `i `ui 2023  ]
 "31
-[; ;datetime.c: 31:             monthDays = 29;
-[e = _monthDays -> -> 29 `i `ui ]
+[; ;datetime.c: 31:         {
+{
 "32
-[; ;datetime.c: 32:         }
+[; ;datetime.c: 32:             monthDays = 29;
+[e = _monthDays -> -> 29 `i `ui ]
+"33
+[; ;datetime.c: 33:         }
 }
 [e $U 2024  ]
-"33
-[; ;datetime.c: 33:         else {monthDays = 28;}
+"34
+[; ;datetime.c: 34:         else {monthDays = 28;}
 [e :U 2023 ]
 {
 [e = _monthDays -> -> 28 `i `ui ]
 }
 [e :U 2024 ]
-"34
-[; ;datetime.c: 34:     }
+"35
+[; ;datetime.c: 35:     }
 }
 [e :U 2022 ]
 [e :U 2021 ]
 [e :U 2019 ]
-"35
-[; ;datetime.c: 35:     return monthDays;
+"36
+[; ;datetime.c: 36:     return monthDays;
 [e ) _monthDays ]
 [e $UE 2017  ]
-"36
-[; ;datetime.c: 36: }
+"37
+[; ;datetime.c: 37: }
 [e :UE 2017 ]
 }
-"38
-[; ;datetime.c: 38: void disp_time(void) {
+"39
+[; ;datetime.c: 39: void disp_time(void) {
 [v _disp_time `(v ~T0 @X0 1 ef ]
 {
 [e :U _disp_time ]
 [f ]
-"39
-[; ;datetime.c: 39:     if (LATDbits.LATD7)
-[e $ ! != -> . . _LATDbits 0 7 `i -> 0 `i 2026  ]
 "40
-[; ;datetime.c: 40:     {
-{
+[; ;datetime.c: 40:     if (LATDbits.LATD7)
+[e $ ! != -> . . _LATDbits 0 7 `i -> 0 `i 2026  ]
 "41
-[; ;datetime.c: 41:         if (hour > 12) {LEDarray_disp_bin(0b111111111);}
+[; ;datetime.c: 41:     {
+{
+"42
+[; ;datetime.c: 42:         if (hour > 12) {LEDarray_disp_bin(0b111111111);}
 [e $ ! > _hour -> -> 12 `i `ui 2027  ]
 {
 [e ( _LEDarray_disp_bin (1 -> -> 511 `i `ui ]
 }
 [e $U 2028  ]
-"42
-[; ;datetime.c: 42:         else {LEDarray_disp_bin(0b000000000);}
+"43
+[; ;datetime.c: 43:         else {LEDarray_disp_bin(0b000000000);}
 [e :U 2027 ]
 {
 [e ( _LEDarray_disp_bin (1 -> -> 0 `i `ui ]
 }
 [e :U 2028 ]
-"43
-[; ;datetime.c: 43:         LATDbits.LATD7 = 0;
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
 "44
-[; ;datetime.c: 44:     }
+[; ;datetime.c: 44:         LATDbits.LATD7 = 0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"45
+[; ;datetime.c: 45:     }
 }
 [e :U 2026 ]
-"46
-[; ;datetime.c: 46:     if (LATHbits.LATH3) {hour++; LATHbits.LATH3 = 0;}
-[e $ ! != -> . . _LATHbits 0 3 `i -> 0 `i 2029  ]
+"47
+[; ;datetime.c: 47:     if (LATDbits.LATD4) {hour++; LATDbits.LATD4 = 0;}
+[e $ ! != -> . . _LATDbits 0 4 `i -> 0 `i 2029  ]
 {
 [e ++ _hour -> -> 1 `i `ui ]
-[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 2029 ]
-"47
-[; ;datetime.c: 47:     if (hour >= 24) {hour = 0; day++;}
-[e $ ! >= _hour -> -> 24 `i `ui 2030  ]
+"48
+[; ;datetime.c: 48:     if (hour > 23) {hour = 0; day++; weekday++;}
+[e $ ! > _hour -> -> 23 `i `ui 2030  ]
 {
 [e = _hour -> -> 0 `i `ui ]
 [e ++ _day -> -> 1 `i `ui ]
+[e ++ _weekday -> -> 1 `i `ui ]
 }
 [e :U 2030 ]
-"48
-[; ;datetime.c: 48:     if (day > month_days(month,year)) {day = 1; month++;}
-[e $ ! > _day ( _month_days (2 , _month _year 2031  ]
+"49
+[; ;datetime.c: 49:     if (weekday > 7) {weekday = 1;}
+[e $ ! > _weekday -> -> 7 `i `ui 2031  ]
+{
+[e = _weekday -> -> 1 `i `ui ]
+}
+[e :U 2031 ]
+"50
+[; ;datetime.c: 50:     if (day > month_days(month,year)) {day = 1; month++;}
+[e $ ! > _day ( _month_days (2 , _month _year 2032  ]
 {
 [e = _day -> -> 1 `i `ui ]
 [e ++ _month -> -> 1 `i `ui ]
 }
-[e :U 2031 ]
-"49
-[; ;datetime.c: 49:     if (month > 12) {month = 1; year++;}
-[e $ ! > _month -> -> 12 `i `ui 2032  ]
+[e :U 2032 ]
+"51
+[; ;datetime.c: 51:     if (month > 12) {month = 1; year++;}
+[e $ ! > _month -> -> 12 `i `ui 2033  ]
 {
 [e = _month -> -> 1 `i `ui ]
 [e ++ _year -> -> 1 `i `ui ]
 }
-[e :U 2032 ]
-"51
-[; ;datetime.c: 51:     if (hour == 1) {LEDarray_control();}
-[e $ ! == _hour -> -> 1 `i `ui 2033  ]
+[e :U 2033 ]
+"53
+[; ;datetime.c: 53:     if (hour == 1) {LEDarray_control();}
+[e $ ! == _hour -> -> 1 `i `ui 2034  ]
 {
 [e ( _LEDarray_control ..  ]
 }
-[e :U 2033 ]
-"52
-[; ;datetime.c: 52:     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
-[e $ ! == _hour -> -> 5 `i `ui 2034  ]
+[e :U 2034 ]
+"54
+[; ;datetime.c: 54:     if (hour == 5) {LEDarray_disp_bin(0b111111111);}
+[e $ ! == _hour -> -> 5 `i `ui 2035  ]
 {
 [e ( _LEDarray_disp_bin (1 -> -> 511 `i `ui ]
 }
-[e :U 2034 ]
-"54
-[; ;datetime.c: 54:     minute = (get16bitTMR0val()*60)/255;
-[e = _minute / * ( _get16bitTMR0val ..  -> -> 60 `i `ui -> -> 255 `i `ui ]
+[e :U 2035 ]
 "56
-[; ;datetime.c: 56:     LCD_setline(2);
-[e ( _LCD_setline (1 -> -> 2 `i `uc ]
-"57
-[; ;datetime.c: 57:     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
-[e ( _sprintf (1 , , , , , (. , &U _timeString :s 1C _minute _hour _day _month _year ]
+[; ;datetime.c: 56:     if ((month == 3 || month == 10) && weekday == 7 && day > 24) {hour = DST_adjust(month,hour);}
+[e $ ! && && || == _month -> -> 3 `i `ui == _month -> -> 10 `i `ui == _weekday -> -> 7 `i `ui > _day -> -> 24 `i `ui 2036  ]
+{
+[e = _hour ( _DST_adjust (2 , _month _hour ]
+}
+[e :U 2036 ]
 "58
-[; ;datetime.c: 58:     LCD_sendstring(timeString);
+[; ;datetime.c: 58:     minute = (get16bitTMR0val()*60)/255;
+[e = _minute / * ( _get16bitTMR0val ..  -> -> 60 `i `ui -> -> 255 `i `ui ]
+"60
+[; ;datetime.c: 60:     LCD_setline(2);
+[e ( _LCD_setline (1 -> -> 2 `i `uc ]
+"61
+[; ;datetime.c: 61:     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
+[e ( _sprintf (1 , , , , , (. , &U _timeString :s 1C _minute _hour _day _month _year ]
+"62
+[; ;datetime.c: 62:     LCD_sendstring(timeString);
 [e ( _LCD_sendstring (1 &U _timeString ]
-"59
-[; ;datetime.c: 59: }
+"63
+[; ;datetime.c: 63: }
 [e :UE 2025 ]
 }
-"61
-[; ;datetime.c: 61: void LEDarray_control(void)
+"65
+[; ;datetime.c: 65: unsigned int DST_adjust(unsigned int month,unsigned int hour)
+[v _DST_adjust `(ui ~T0 @X0 1 ef2`ui`ui ]
+"66
+[; ;datetime.c: 66: {
+{
+[e :U _DST_adjust ]
+"65
+[; ;datetime.c: 65: unsigned int DST_adjust(unsigned int month,unsigned int hour)
+[v _month `ui ~T0 @X0 1 r1 ]
+[v _hour `ui ~T0 @X0 1 r2 ]
+"66
+[; ;datetime.c: 66: {
+[f ]
+"67
+[; ;datetime.c: 67:     if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
+[e $ ! && && == _month -> -> 3 `i `ui == _hour -> -> 1 `i `ui == -> . . _LATHbits 0 3 `i -> 0 `i 2038  ]
+"68
+[; ;datetime.c: 68:     {
+{
+"69
+[; ;datetime.c: 69:         hour = 2;
+[e = _hour -> -> 2 `i `ui ]
+"70
+[; ;datetime.c: 70:         LATHbits.LATH3 = 1;
+[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+"71
+[; ;datetime.c: 71:     }
+}
+[e :U 2038 ]
+"72
+[; ;datetime.c: 72:     if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
+[e $ ! && && == _month -> -> 10 `i `ui == _hour -> -> 2 `i `ui == -> . . _LATHbits 0 3 `i -> 1 `i 2039  ]
+"73
+[; ;datetime.c: 73:     {
+{
+"74
+[; ;datetime.c: 74:         hour = 1;
+[e = _hour -> -> 1 `i `ui ]
+"75
+[; ;datetime.c: 75:         LATHbits.LATH3 = 0;
+[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+"76
+[; ;datetime.c: 76:     }
+}
+[e :U 2039 ]
+"77
+[; ;datetime.c: 77:     return hour;
+[e ) _hour ]
+[e $UE 2037  ]
+"78
+[; ;datetime.c: 78: }
+[e :UE 2037 ]
+}
+"80
+[; ;datetime.c: 80: void LEDarray_control(void)
 [v _LEDarray_control `(v ~T0 @X0 1 ef ]
-"62
-[; ;datetime.c: 62: {
+"81
+[; ;datetime.c: 81: {
 {
 [e :U _LEDarray_control ]
 [f ]
-"63
-[; ;datetime.c: 63:     unsigned int temp = 0;
+"82
+[; ;datetime.c: 82:     unsigned int temp = 0;
 [v _temp `ui ~T0 @X0 1 a ]
 [e = _temp -> -> 0 `i `ui ]
-"64
-[; ;datetime.c: 64:     if (day % 3 == 0) {temp = 0b001001001;}
-[e $ ! == % _day -> -> 3 `i `ui -> -> 0 `i `ui 2036  ]
+"83
+[; ;datetime.c: 83:     if (day % 3 == 0) {temp = 0b001001001;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 0 `i `ui 2041  ]
 {
 [e = _temp -> -> 73 `i `ui ]
 }
-[e :U 2036 ]
-"65
-[; ;datetime.c: 65:     if (day % 3 == 1) {temp = 0b010010010;}
-[e $ ! == % _day -> -> 3 `i `ui -> -> 1 `i `ui 2037  ]
+[e :U 2041 ]
+"84
+[; ;datetime.c: 84:     if (day % 3 == 1) {temp = 0b010010010;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 1 `i `ui 2042  ]
 {
 [e = _temp -> -> 146 `i `ui ]
 }
-[e :U 2037 ]
-"66
-[; ;datetime.c: 66:     if (day % 3 == 2) {temp = 0b100100100;}
-[e $ ! == % _day -> -> 3 `i `ui -> -> 2 `i `ui 2038  ]
+[e :U 2042 ]
+"85
+[; ;datetime.c: 85:     if (day % 3 == 2) {temp = 0b100100100;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 2 `i `ui 2043  ]
 {
 [e = _temp -> -> 292 `i `ui ]
 }
-[e :U 2038 ]
-"67
-[; ;datetime.c: 67:     LEDarray_disp_bin(temp);
+[e :U 2043 ]
+"86
+[; ;datetime.c: 86:     LEDarray_disp_bin(temp);
 [e ( _LEDarray_disp_bin (1 _temp ]
-"68
-[; ;datetime.c: 68: }
-[e :UE 2035 ]
+"87
+[; ;datetime.c: 87: }
+[e :UE 2040 ]
 }
 [p f _sprintf 8421508 ]
 [a 1C 37 48 50 100 32 37 48 50 100 32 37 48 50 100 32 37 48 50 100 32 37 48 52 100 0 ]

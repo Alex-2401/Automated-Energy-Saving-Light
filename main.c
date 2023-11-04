@@ -29,10 +29,13 @@ void main(void) {
     // needed variables
     char lightString[4];
     // setup pin for output (connected to LED)
-    LATHbits.LATH3=0;   //set initial output state
+    LATHbits.LATH3=0;   //THIS IS FOR THE DST (IF DST IS HAPPENING THEN ITS A 1)
     TRISHbits.TRISH3=0; //set TRIS value for pin (output)
+    
     LATDbits.LATD7=0;   //set initial output state
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
+    LATDbits.LATD4=0;   //set initial output state
+    TRISDbits.TRISD4=0; //set TRIS value for pin (output)    
     
     while (1)
     { 
@@ -41,7 +44,6 @@ void main(void) {
         LCD_sendstring(lightString);
         
         disp_time();
-        //LEDarray_control();
         
         __delay_ms(10);
     }

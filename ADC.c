@@ -33,11 +33,11 @@ unsigned int ADC_getval(void)
     
     tmpval = 255 - tmpval; //invert readings for LDR so brighter is a bigger number
 
-    //min value is 39
-    //max value is 153
+    //min value is 20
+    //max value is 106
     //subject to change depending on environment
     
-    tmpval = ((tmpval - 39 + 2) *60)/(153-39+2) ; // scaling from 0 to 255 (added 2 for redundancy)
+    tmpval = ((tmpval - 20 + 2) *255)/(106-20+2) ; // scaling from 0 to 255 (added 2 for redundancy)
     if (tmpval > 512) {tmpval = 0;} //check just incase above statement ends up negative, it will become a huge positive number (integer limit)
                                    //arbitrary number (this is 2x what the scale is) as when moving to new environment the scale will be off
     return tmpval; //return this value when the function is called

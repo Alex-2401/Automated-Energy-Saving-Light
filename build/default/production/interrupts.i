@@ -24155,7 +24155,7 @@ void __attribute__((picinterrupt(("low_priority")))) LowISR()
         TMR0H=0b00001011;
         TMR0L=0b11011011;
 
-        LATHbits.LATH3 = 1;
+        LATDbits.LATD4 = 1;
         PIR0bits.TMR0IF=0;
     }
 }
