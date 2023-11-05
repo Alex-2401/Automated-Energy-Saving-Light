@@ -11,7 +11,30 @@ unsigned int day = 30;
 unsigned int weekday = 6; //Monday = 1, Tuesday = 2, Wednesday = 3, Thurday = 4, Friday = 5, Saturday = 6, Sunday = 7
 unsigned int month = 3;
 unsigned int year = 2024;
+unsigned int sunrisetime=0;
+unsigned int sunsettime=0;
+unsigned int midday = 0;
 char timeString[10];
+
+void Callibrate (void) {
+    if (LATDbits.LATD7)
+    {
+        if (hour < 12) {sunrisetime = hour*60 + minute;}    // measure sunrise time
+        if (hour > 12) {
+            sunsettime = hour*60 +minute;
+            midday = (sunrisetime + sunsettime)/2 ;
+            hour = int ((midday +  sunsettime - midday)/60);
+            minute = (midday +  sunsettime - midday)%60;
+        }
+        
+    }
+
+
+
+
+
+
+}
 
 unsigned int month_days(unsigned int month, unsigned int year) //gets number of days in a given months for a given year
 {
