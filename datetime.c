@@ -6,23 +6,26 @@
 #include "timers.h"
 #include "LEDarray.h"
 
-unsigned int minute = 0;
-unsigned int hour = 16;
-unsigned int day = 30;
+unsigned int second = 30;
+unsigned int minute = 55;
+unsigned int hour = 17;
+unsigned int day = 10;
 unsigned int weekday = 6; //Monday = 1, Tuesday = 2, Wednesday = 3, Thurday = 4, Friday = 5, Saturday = 6, Sunday = 7
 unsigned int month = 3;
 unsigned int year = 2024;
-unsigned int sunrisetime=0;
+
+unsigned int sunrisetime=(6*60+26);
 unsigned int sunsettime=0;
 char timeString[10];
-char lightString[10];
+char syncString[10];
+
 unsigned int calculatedmidday_minute = 0;
 unsigned int calculatedmidday_hour = 12;
 unsigned int difference = 0;
 unsigned int solarnoonminutes= 0;
-unsigned int eot = 0;
-unsigned int longitude = 0;
-unsigned int longitudestz = 0;
+unsigned int EoT = 0;
+unsigned int longitude = 0;     //where you are located (England is approximatly 0)
+unsigned int longitudestz = 0;  //where the time zone is located
 
 void Callibrate(void) {
     if (LATDbits.LATD7)
@@ -30,17 +33,17 @@ void Callibrate(void) {
         if (hour < 12) {sunrisetime = hour*60 + minute;}    // measure sunrise time
         if (hour > 12) {sunsettime = hour*60 + minute; // reset time at sunset
             
-            eot = 9.87 * sin(2 * ((360 * (day - 81) / 365.0) * M_PI / 180)) -
-            7.67 * sin((360 * (day - 81) / 365.0 + 78.7) * M_PI / 180); // use equation of time to find midday at times across the year
-            solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - eot; // solar noon in minutes
+            EoT = 9.87 * sin(2 * ((360 * (day - 81) / 365.0) * M_PI / 180)) - 7.67 * sin((360 * (day - 81) / 365.0 + 78.7) * M_PI / 180); // use equation of time to find midday at times across the year
+            solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT; // solar noon in minutes
             difference = (sunsettime- sunrisetime)/2;  // difference between sunrise and midday in minutes 
             hour =(solarnoonminutes + difference)/60;    // reset hour according to midday time 
             minute = (solarnoonminutes + difference)%60;
+            second = ((solarnoonminutes + difference)%60)%60;
         }
         
         LCD_setline(1); //Set Line 1
-        sprintf(lightString,"%02d %02d",hour,minute);
-        LCD_sendstring(lightString);
+        sprintf(syncString,"%02d %02d %02d          ",second,minute,hour);
+        LCD_sendstring(syncString);
     }
 }
 
@@ -75,7 +78,17 @@ void disp_time(void) {
         LATDbits.LATD7 = 0;
     }
     
-    if (LATDbits.LATD4) {hour++; LATDbits.LATD4 = 0;}
+    if (LATDbits.LATD4)
+    {
+        if (LATHbits.LATH0) {hour++;}            
+        if (!LATHbits.LATH0) {second++;
+            if (second > 59) {second = 0; minute++;
+                if (minute > 59) {minute = 0; hour++;}
+            }
+        }
+        LATDbits.LATD4 = 0;
+    }
+    if (LATHbits.LATH0) {minute = (get16bitTMR0val()*60)/255;}  //getting timer time and converting to minutes 
     if (hour > 23) {hour = 0; day++; weekday++;}      //checks if a day has passed
     if (weekday > 7) {weekday = 1;}     //checks if week has passed
     if (day > month_days(month,year)) {day = 1; month++;}      //checks if a month has passed
@@ -85,9 +98,7 @@ void disp_time(void) {
     if (hour == 5) {LEDarray_disp_bin(0b111111111);}  //5am check
     
     if ((month == 3 || month == 10) && weekday == 7 && day > 24) {hour = DST_adjust(month,hour);}
-    
-    minute = (get16bitTMR0val()*60)/255;    //getting timer time and converting to minutes 
-    
+        
     LCD_setline(2); //Set Line 2
     sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);  //displaying time
     LCD_sendstring(timeString);

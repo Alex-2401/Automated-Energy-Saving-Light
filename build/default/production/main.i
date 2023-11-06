@@ -24360,6 +24360,8 @@ void main(void) {
 
     LATHbits.LATH3=0;
     TRISHbits.TRISH3=0;
+    LATHbits.LATH0=1;
+    TRISHbits.TRISH0=0;
 
     LATDbits.LATD7=0;
     TRISDbits.TRISD7=0;
@@ -24368,10 +24370,11 @@ void main(void) {
 
     while (1)
     {
-        LCD_setline(1);
-        sprintf(lightString,"%03d",ADC_getval());
-        LCD_sendstring(lightString);
 
+
+
+
+        Callibrate();
         disp_time();
 
         _delay((unsigned long)((10)*(64000000/4000.0)));
