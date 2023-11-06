@@ -24340,6 +24340,7 @@ void disp_time(void);
 unsigned int month_days(unsigned int month, unsigned int year);
 void LEDarray_control(void);
 unsigned int DST_adjust(unsigned int month,unsigned int hour);
+void Callibrate(void);
 # 16 "main.c" 2
 
 

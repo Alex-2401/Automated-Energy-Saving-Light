@@ -7,6 +7,12 @@
 [v _ADC_init ADC_init `(v  1 e 1 0 ]
 "23
 [v _ADC_getval ADC_getval `(ui  1 e 2 0 ]
+"26 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__cosdf.c
+[v ___cosdf __cosdf `(f  1 e 4 0 ]
+"44 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__rem_pio2f.c
+[v ___rem_pio2f __rem_pio2f `(i  1 e 2 0 ]
+"26 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__sindf.c
+[v ___sindf __sindf `(f  1 e 4 0 ]
 "1 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
@@ -23,10 +29,16 @@
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 "1817
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fabsf.c
+[v _fabsf fabsf `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
@@ -47,6 +59,8 @@
 [v _sprintf sprintf `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
 [v _putch putch `(v  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sinf.c
+[v _sinf sinf `(f  1 e 4 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -61,17 +75,19 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 "7 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\comparator.c
 [v _DAC_init DAC_init `(v  1 e 1 0 ]
 "22
 [v _Comp1_init Comp1_init `(v  1 e 1 0 ]
-"16 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"47 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _month_days month_days `(ui  1 e 2 0 ]
-"39
+"70
 [v _disp_time disp_time `(v  1 e 1 0 ]
-"65
+"96
 [v _DST_adjust DST_adjust `(ui  1 e 2 0 ]
-"80
+"113
 [v _LEDarray_control LEDarray_control `(v  1 e 1 0 ]
 "9 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\interrupts.c
 [v _Interrupts_init Interrupts_init `(v  1 e 1 0 ]
@@ -101,7 +117,7 @@
 [v _Timer0_init Timer0_init `(v  1 e 1 0 ]
 "25
 [v _get16bitTMR0val get16bitTMR0val `(ui  1 e 2 0 ]
-[s S1208 . 1 `uc 1 INT0IP 1 0 :1:0 
+[s S1225 . 1 `uc 1 INT0IP 1 0 :1:0 
 `uc 1 INT1IP 1 0 :1:1 
 `uc 1 INT2IP 1 0 :1:2 
 `uc 1 INT3IP 1 0 :1:3 
@@ -109,9 +125,9 @@
 `uc 1 TMR0IP 1 0 :1:5 
 ]
 "4009 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h
-[u S1215 . 1 `S1208 1 . 1 0 ]
-[v _IPR0bits IPR0bits `VES1215  1 e 1 @3615 ]
-[s S1184 . 1 `uc 1 C1IP 1 0 :1:0 
+[u S1232 . 1 `S1225 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES1232  1 e 1 @3615 ]
+[s S1201 . 1 `uc 1 C1IP 1 0 :1:0 
 `uc 1 C2IP 1 0 :1:1 
 `uc 1 C3IP 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -119,12 +135,12 @@
 `uc 1 HLVDIP 1 0 :1:7 
 ]
 "4111
-[s S1191 . 1 `uc 1 . 1 0 :6:0 
+[s S1208 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIP 1 0 :1:6 
 ]
-[u S1194 . 1 `S1184 1 . 1 0 `S1191 1 . 1 0 ]
-[v _IPR2bits IPR2bits `VES1194  1 e 1 @3617 ]
-[s S1143 . 1 `uc 1 INT0IE 1 0 :1:0 
+[u S1211 . 1 `S1201 1 . 1 0 `S1208 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES1211  1 e 1 @3617 ]
+[s S1160 . 1 `uc 1 INT0IE 1 0 :1:0 
 `uc 1 INT1IE 1 0 :1:1 
 `uc 1 INT2IE 1 0 :1:2 
 `uc 1 INT3IE 1 0 :1:3 
@@ -132,9 +148,9 @@
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "4557
-[u S1150 . 1 `S1143 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES1150  1 e 1 @3625 ]
-[s S1160 . 1 `uc 1 C1IE 1 0 :1:0 
+[u S1167 . 1 `S1160 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES1167  1 e 1 @3625 ]
+[s S1177 . 1 `uc 1 C1IE 1 0 :1:0 
 `uc 1 C2IE 1 0 :1:1 
 `uc 1 C3IE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -142,12 +158,12 @@
 `uc 1 HLVDIE 1 0 :1:7 
 ]
 "4659
-[s S1167 . 1 `uc 1 . 1 0 :6:0 
+[s S1184 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIE 1 0 :1:6 
 ]
-[u S1170 . 1 `S1160 1 . 1 0 `S1167 1 . 1 0 ]
-[v _PIE2bits PIE2bits `VES1170  1 e 1 @3627 ]
-[s S1310 . 1 `uc 1 INT0IF 1 0 :1:0 
+[u S1187 . 1 `S1177 1 . 1 0 `S1184 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1187  1 e 1 @3627 ]
+[s S1327 . 1 `uc 1 INT0IF 1 0 :1:0 
 `uc 1 INT1IF 1 0 :1:1 
 `uc 1 INT2IF 1 0 :1:2 
 `uc 1 INT3IF 1 0 :1:3 
@@ -155,9 +171,9 @@
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "5102
-[u S1317 . 1 `S1310 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES1317  1 e 1 @3635 ]
-[s S1264 . 1 `uc 1 C1IF 1 0 :1:0 
+[u S1334 . 1 `S1327 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1334  1 e 1 @3635 ]
+[s S1281 . 1 `uc 1 C1IF 1 0 :1:0 
 `uc 1 C2IF 1 0 :1:1 
 `uc 1 C3IF 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -165,11 +181,11 @@
 `uc 1 HLVDIF 1 0 :1:7 
 ]
 "5204
-[s S1271 . 1 `uc 1 . 1 0 :6:0 
+[s S1288 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIF 1 0 :1:6 
 ]
-[u S1274 . 1 `S1264 1 . 1 0 `S1271 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES1274  1 e 1 @3637 ]
+[u S1291 . 1 `S1281 1 . 1 0 `S1288 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1291  1 e 1 @3637 ]
 [s S45 . 1 `uc 1 ANSELA0 1 0 :1:0 
 `uc 1 ANSELA1 1 0 :1:1 
 `uc 1 ANSELA2 1 0 :1:2 
@@ -490,31 +506,31 @@
 ]
 [u S517 . 1 `S502 1 . 1 0 `S511 1 . 1 0 ]
 [v _LATGbits LATGbits `VES517  1 e 1 @3967 ]
-[s S1059 . 1 `uc 1 LATH0 1 0 :1:0 
+[s S1064 . 1 `uc 1 LATH0 1 0 :1:0 
 `uc 1 LATH1 1 0 :1:1 
 `uc 1 LATH2 1 0 :1:2 
 `uc 1 LATH3 1 0 :1:3 
 ]
 "28941
-[s S1064 . 1 `uc 1 LH0 1 0 :1:0 
+[s S1069 . 1 `uc 1 LH0 1 0 :1:0 
 `uc 1 LH1 1 0 :1:1 
 `uc 1 LH2 1 0 :1:2 
 `uc 1 LH3 1 0 :1:3 
 ]
-[s S1069 . 1 `uc 1 . 1 0 :4:0 
+[s S1074 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LH4 1 0 :1:4 
 ]
-[s S1072 . 1 `uc 1 . 1 0 :5:0 
+[s S1077 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LH5 1 0 :1:5 
 ]
-[s S1075 . 1 `uc 1 . 1 0 :6:0 
+[s S1080 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LH6 1 0 :1:6 
 ]
-[s S1078 . 1 `uc 1 . 1 0 :7:0 
+[s S1083 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LH7 1 0 :1:7 
 ]
-[u S1081 . 1 `S1059 1 . 1 0 `S1064 1 . 1 0 `S1069 1 . 1 0 `S1072 1 . 1 0 `S1075 1 . 1 0 `S1078 1 . 1 0 ]
-[v _LATHbits LATHbits `VES1081  1 e 1 @3968 ]
+[u S1086 . 1 `S1064 1 . 1 0 `S1069 1 . 1 0 `S1074 1 . 1 0 `S1077 1 . 1 0 `S1080 1 . 1 0 `S1083 1 . 1 0 ]
+[v _LATHbits LATHbits `VES1086  1 e 1 @3968 ]
 [s S24 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
@@ -551,7 +567,7 @@
 "29272
 [u S306 . 1 `S297 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES306  1 e 1 @3971 ]
-[s S1461 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S1478 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -561,8 +577,8 @@
 `uc 1 TRISD7 1 0 :1:7 
 ]
 "29394
-[u S1470 . 1 `S1461 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES1470  1 e 1 @3972 ]
+[u S1487 . 1 `S1478 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1487  1 e 1 @3972 ]
 [s S339 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
@@ -599,41 +615,41 @@
 "29695
 [u S445 . 1 `S436 1 . 1 0 ]
 [v _TRISGbits TRISGbits `VES445  1 e 1 @3975 ]
-[s S1426 . 1 `uc 1 TRISH0 1 0 :1:0 
+[s S1443 . 1 `uc 1 TRISH0 1 0 :1:0 
 `uc 1 TRISH1 1 0 :1:1 
 `uc 1 TRISH2 1 0 :1:2 
 `uc 1 TRISH3 1 0 :1:3 
 ]
 "29748
-[u S1431 . 1 `S1426 1 . 1 0 ]
-[v _TRISHbits TRISHbits `VES1431  1 e 1 @3976 ]
+[u S1448 . 1 `S1443 1 . 1 0 ]
+[v _TRISHbits TRISHbits `VES1448  1 e 1 @3976 ]
 "38865
 [v _TMR0L TMR0L `VEuc  1 e 1 @4051 ]
 "39003
 [v _TMR0H TMR0H `VEuc  1 e 1 @4052 ]
-[s S1561 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1578 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T016BIT 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "39277
-[s S1567 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+[s S1584 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
 `uc 1 T0OUTPS3 1 0 :1:3 
 ]
 "39277
-[u S1572 . 1 `S1561 1 . 1 0 `S1567 1 . 1 0 ]
+[u S1589 . 1 `S1578 1 . 1 0 `S1584 1 . 1 0 ]
 "39277
 "39277
-[v _T0CON0bits T0CON0bits `VES1572  1 e 1 @4053 ]
-[s S1515 . 1 `uc 1 T0CKPS 1 0 :4:0 
+[v _T0CON0bits T0CON0bits `VES1589  1 e 1 @4053 ]
+[s S1532 . 1 `uc 1 T0CKPS 1 0 :4:0 
 `uc 1 T0ASYNC 1 0 :1:4 
 `uc 1 T0CS 1 0 :3:5 
 ]
 "39353
-[s S1519 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+[s S1536 . 1 `uc 1 T0CKPS0 1 0 :1:0 
 `uc 1 T0CKPS1 1 0 :1:1 
 `uc 1 T0CKPS2 1 0 :1:2 
 `uc 1 T0CKPS3 1 0 :1:3 
@@ -643,20 +659,20 @@
 `uc 1 T0CS2 1 0 :1:7 
 ]
 "39353
-[s S1528 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S1545 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 `uc 1 T0PS3 1 0 :1:3 
 ]
 "39353
-[s S1533 . 1 `uc 1 T0PS 1 0 :4:0 
+[s S1550 . 1 `uc 1 T0PS 1 0 :4:0 
 ]
 "39353
-[u S1535 . 1 `S1515 1 . 1 0 `S1519 1 . 1 0 `S1528 1 . 1 0 `S1533 1 . 1 0 ]
+[u S1552 . 1 `S1532 1 . 1 0 `S1536 1 . 1 0 `S1545 1 . 1 0 `S1550 1 . 1 0 ]
 "39353
 "39353
-[v _T0CON1bits T0CON1bits `VES1535  1 e 1 @4054 ]
-[s S1225 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[v _T0CON1bits T0CON1bits `VES1552  1 e 1 @4054 ]
+[s S1242 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 INT3EDG 1 0 :1:3 
@@ -666,20 +682,20 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "40176
-[s S1234 . 1 `uc 1 . 1 0 :6:0 
+[s S1251 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "40176
-[s S1238 . 1 `uc 1 . 1 0 :6:0 
+[s S1255 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "40176
-[u S1242 . 1 `S1225 1 . 1 0 `S1234 1 . 1 0 `S1238 1 . 1 0 ]
+[u S1259 . 1 `S1242 1 . 1 0 `S1251 1 . 1 0 `S1255 1 . 1 0 ]
 "40176
 "40176
-[v _INTCONbits INTCONbits `VES1242  1 e 1 @4082 ]
+[v _INTCONbits INTCONbits `VES1259  1 e 1 @4082 ]
 "153 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
@@ -687,20 +703,32 @@
 [v _flags flags `uc  1 s 1 flags ]
 "185
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
-"8 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"9 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _minute minute `ui  1 e 2 0 ]
-"9
-[v _hour hour `ui  1 e 2 0 ]
 "10
-[v _day day `ui  1 e 2 0 ]
+[v _hour hour `ui  1 e 2 0 ]
 "11
-[v _weekday weekday `ui  1 e 2 0 ]
+[v _day day `ui  1 e 2 0 ]
 "12
-[v _month month `ui  1 e 2 0 ]
+[v _weekday weekday `ui  1 e 2 0 ]
 "13
-[v _year year `ui  1 e 2 0 ]
+[v _month month `ui  1 e 2 0 ]
 "14
+[v _year year `ui  1 e 2 0 ]
+"15
+[v _sunrisetime sunrisetime `ui  1 e 2 0 ]
+"16
+[v _sunsettime sunsettime `ui  1 e 2 0 ]
+"17
 [v _timeString timeString `[10]uc  1 e 10 0 ]
+"18
+[v _lightString lightString `[10]uc  1 e 10 0 ]
+"21
+[v _difference difference `ui  1 e 2 0 ]
+"22
+[v _solarnoonminutes solarnoonminutes `ui  1 e 2 0 ]
+"23
+[v _eot eot `ui  1 e 2 0 ]
 "20 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -708,18 +736,18 @@
 [v main@lightString lightString `[4]uc  1 a 4 0 ]
 "50
 } 0
-"39 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"70 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _disp_time disp_time `(v  1 e 1 0 ]
 {
-"63
+"94
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S2038 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[u S2055 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
 "13
-[s S2041 _IO_FILE 12 `S2038 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v sprintf@f f `S2041  1 a 12 62 ]
+[s S2058 _IO_FILE 12 `S2055 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v sprintf@f f `S2058  1 a 12 62 ]
 "12
 [v sprintf@ap ap `[1]*.30v  1 a 1 61 ]
 "9
@@ -732,9 +760,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.31uc  1 a 1 48 ]
-[s S2073 _IO_FILE 0 ]
+[s S2090 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S2073  1 p 1 45 ]
+[v vfprintf@fp fp `*.30S2090  1 p 1 45 ]
 [v vfprintf@fmt fmt `*.31Cuc  1 p 1 46 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 47 ]
 "1840
@@ -742,16 +770,16 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S2097 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[u S2114 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S2097  1 a 4 39 ]
+[v vfpfcnvrt@convarg convarg `S2114  1 a 4 39 ]
 "1179
 [v vfpfcnvrt@cp cp `*.31uc  1 a 1 44 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 43 ]
-[s S2073 _IO_FILE 0 ]
+[s S2090 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.30S2073  1 p 1 34 ]
+[v vfpfcnvrt@fp fp `*.30S2090  1 p 1 34 ]
 [v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 35 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 36 ]
 "1814
@@ -778,9 +806,9 @@
 [v dtoa@s s `uc  1 a 1 31 ]
 "520
 [v dtoa@p p `a  1 a 1 28 ]
-[s S2073 _IO_FILE 0 ]
+[s S2090 _IO_FILE 0 ]
 "513
-[v dtoa@fp fp `*.30S2073  1 p 1 23 ]
+[v dtoa@fp fp `*.30S2090  1 p 1 23 ]
 [v dtoa@d d `i  1 p 2 24 ]
 "583
 } 0
@@ -789,9 +817,9 @@
 {
 "195
 [v pad@i i `i  1 a 2 21 ]
-[s S2073 _IO_FILE 0 ]
+[s S2090 _IO_FILE 0 ]
 "193
-[v pad@fp fp `*.30S2073  1 p 1 16 ]
+[v pad@fp fp `*.30S2090  1 p 1 16 ]
 [v pad@buf buf `*.30uc  1 p 1 17 ]
 [v pad@p p `i  1 p 2 18 ]
 "226
@@ -805,18 +833,18 @@
 [v fputs@c c `uc  1 a 1 13 ]
 "8
 [v fputs@s s `*.30Cuc  1 p 1 11 ]
-[u S2038 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S2041 _IO_FILE 12 `S2038 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputs@fp fp `*.30S2041  1 p 1 12 ]
+[u S2055 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2058 _IO_FILE 12 `S2055 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputs@fp fp `*.30S2058  1 p 1 12 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[u S2038 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S2041 _IO_FILE 12 `S2038 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputc@fp fp `*.30S2041  1 p 1 5 ]
+[u S2055 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2058 _IO_FILE 12 `S2055 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.30S2058  1 p 1 5 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
@@ -854,15 +882,15 @@
 [v ___awdiv@divisor divisor `i  1 p 2 5 ]
 "41
 } 0
-"16 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"47 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _month_days month_days `(ui  1 e 2 0 ]
 {
-"18
+"49
 [v month_days@monthDays monthDays `ui  1 a 2 14 ]
-"16
+"47
 [v month_days@month month `ui  1 p 2 8 ]
 [v month_days@year year `ui  1 p 2 10 ]
-"37
+"68
 } 0
 "25 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
 [v _get16bitTMR0val get16bitTMR0val `(ui  1 e 2 0 ]
@@ -871,12 +899,12 @@
 [v get16bitTMR0val@time time `ui  1 a 2 5 ]
 "31
 } 0
-"80 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"113 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _LEDarray_control LEDarray_control `(v  1 e 1 0 ]
 {
-"82
+"115
 [v LEDarray_control@temp temp `ui  1 a 2 8 ]
-"87
+"120
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
@@ -909,12 +937,12 @@
 [v LCD_sendstring@string string `*.30uc  1 p 1 6 ]
 "117
 } 0
-"65 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
+"96 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\datetime.c
 [v _DST_adjust DST_adjust `(ui  1 e 2 0 ]
 {
 [v DST_adjust@month month `ui  1 p 2 3 ]
 [v DST_adjust@hour hour `ui  1 p 2 5 ]
-"78
+"111
 } 0
 "7 C:\Users\AlexPittaras\Documents\GitHub\mini-project-alex-dayo-ecm.X\timers.c
 [v _Timer0_init Timer0_init `(v  1 e 1 0 ]

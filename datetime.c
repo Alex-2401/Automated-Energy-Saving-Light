@@ -30,16 +30,13 @@ void Callibrate(void) {
         if (hour < 12) {sunrisetime = hour*60 + minute;}    // measure sunrise time
         if (hour > 12) {sunsettime = hour*60 + minute; // reset time at sunset
             
-           eot = 9.87*sin(2(360(day-81)/365)3.1415/180)-7.67*sin((360(day-81)/365+78.7)*3.1415/180) // use equation of time to find midday at times across the year
-           solarnoonminutes= 12*60 + 4*(longitude - longitudestz) - eot// solar noon in minutes
-            difference = (sunsettime- sunrisetime)/2 ;  // difference between sunrise and midday in minutes 
-           hour =(solarnoonminutes + difference)/60;    // reset hour according to midday time 
-           minute = (solarnoonminutes + difference)%60;
-                 
-            
-
+            eot = 9.87 * sin(2 * ((360 * (day - 81) / 365.0) * M_PI / 180)) -
+            7.67 * sin((360 * (day - 81) / 365.0 + 78.7) * M_PI / 180); // use equation of time to find midday at times across the year
+            solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - eot; // solar noon in minutes
+            difference = (sunsettime- sunrisetime)/2;  // difference between sunrise and midday in minutes 
+            hour =(solarnoonminutes + difference)/60;    // reset hour according to midday time 
+            minute = (solarnoonminutes + difference)%60;
         }
-
         
         LCD_setline(1); //Set Line 1
         sprintf(lightString,"%02d %02d",hour,minute);
@@ -101,13 +98,13 @@ unsigned int DST_adjust(unsigned int month,unsigned int hour)
     if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
     {
         hour = 2;
-        midday = 13;
+        
         LATHbits.LATH3 = 1;
     }
     if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
     {
         hour = 1;
-        midday = 12;
+        
         LATHbits.LATH3 = 0;
     }
     return hour;
