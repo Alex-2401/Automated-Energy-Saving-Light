@@ -25,27 +25,21 @@ void main(void) {
     Timer0_init();
     LEDarray_init();
     Interrupts_init();
+    datetime_init();
     
     // needed variables
     char lightString[4];
-    // setup pin for output (connected to LED)
-    LATHbits.LATH3=0;   //THIS IS FOR THE DST (IF DST IS HAPPENING THEN ITS A 1)
-    TRISHbits.TRISH3=0; //set TRIS value for pin (output)
-    LATHbits.LATH0=1;   //THIS IS FOR TESTING MODE (IF TESTING MODE IS ON, ITS A 1)
-    TRISHbits.TRISH0=0; //set TRIS value for pin (output)
-    
-    LATDbits.LATD7=0;   //set initial output state
-    TRISDbits.TRISD7=0; //set TRIS value for pin (output)
-    LATDbits.LATD4=0;   //set initial output state
-    TRISDbits.TRISD4=0; //set TRIS value for pin (output)    
     
     while (1)
     { 
+        
 //        LCD_setline(1); //Set Line 1
 //        sprintf(lightString,"%03d",ADC_getval());
 //        LCD_sendstring(lightString);
         
         Callibrate();
+        calc_time();
+        LED_activation();
         disp_time();
         
         __delay_ms(10);

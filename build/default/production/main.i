@@ -24286,8 +24286,7 @@ unsigned int get16bitTMR0val(void);
 
 void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
-void LEDarray_disp_dec(unsigned int number);
-void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+void LEDarray_control(unsigned int day);
 # 12 "main.c" 2
 
 # 1 "./interrupts.h" 1
@@ -24336,9 +24335,11 @@ unsigned int ADC_getval(void);
 
 
 
+void datetime_init(void);
+void calc_time(void);
 void disp_time(void);
-unsigned int month_days(unsigned int month, unsigned int year);
-void LEDarray_control(void);
+void LED_activation(void);
+unsigned int month_days(unsigned int month,unsigned int year);
 unsigned int DST_adjust(unsigned int month,unsigned int hour);
 void Callibrate(void);
 # 16 "main.c" 2
@@ -24354,19 +24355,10 @@ void main(void) {
     Timer0_init();
     LEDarray_init();
     Interrupts_init();
+    datetime_init();
 
 
     char lightString[4];
-
-    LATHbits.LATH3=0;
-    TRISHbits.TRISH3=0;
-    LATHbits.LATH0=1;
-    TRISHbits.TRISH0=0;
-
-    LATDbits.LATD7=0;
-    TRISDbits.TRISD7=0;
-    LATDbits.LATD4=0;
-    TRISDbits.TRISD4=0;
 
     while (1)
     {
@@ -24374,7 +24366,10 @@ void main(void) {
 
 
 
+
         Callibrate();
+        calc_time();
+        LED_activation();
         disp_time();
 
         _delay((unsigned long)((10)*(64000000/4000.0)));

@@ -24120,6 +24120,11 @@ void ADC_init(void)
     ADCON0bits.ADON = 1;
 }
 
+
+
+
+
+
 unsigned int ADC_getval(void)
 {
     unsigned int tmpval;

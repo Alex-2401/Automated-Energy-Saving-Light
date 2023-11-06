@@ -125,17 +125,3 @@ void LCD_scroll(void)
     LCD_sendbyte(0b00011000,0); //Scroll 1 position to the left
     __delay_us(50); //delay above 39us
 }
-
-/************************************
- * Function takes a ADC value and works out the voltage to 2 dp
- * the result is stored in buf as ascii text ready for display on LCD
- * Note result is stored in a buffer using pointers, it is not sent to the LCD
-************************************/
-void ADC2String(char *buf, unsigned int ADC_val){
-	//code to calculate the integer and fractions part of a ADC value
-    unsigned int int_part = ADC_val/77; //255/3.3 = 77
-    unsigned int frac_part = (ADC_val*100)/77 - int_part *100;
-	// and format as a string using sprintf (see GitHub readme)
-    sprintf(buf,"%d.%02d",int_part,frac_part);
-    LCD_sendstring(buf);
-}

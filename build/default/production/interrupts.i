@@ -24112,9 +24112,9 @@ void __attribute__((picinterrupt(("low_priority")))) LowISR();
 
 void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
-void LEDarray_disp_dec(unsigned int number);
-void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+void LEDarray_control(unsigned int day);
 # 3 "interrupts.c" 2
+
 
 
 
@@ -24133,12 +24133,14 @@ void Interrupts_init(void)
     INTCONbits.IPEN=1;
     INTCONbits.GIE=1;
     INTCONbits.PEIE = 1;
+
+
+    LATDbits.LATD7=0;
+    TRISDbits.TRISD7=0;
+    LATDbits.LATD4=0;
+    TRISDbits.TRISD4=0;
 }
-
-
-
-
-
+# 37 "interrupts.c"
 void __attribute__((picinterrupt(("high_priority")))) HighISR()
 {
 
@@ -24147,7 +24149,7 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR()
         PIR2bits.C1IF=0;
     }
 }
-
+# 53 "interrupts.c"
 void __attribute__((picinterrupt(("low_priority")))) LowISR()
 {
 

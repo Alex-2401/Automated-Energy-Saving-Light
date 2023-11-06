@@ -5,6 +5,7 @@
 /************************************
  * Function to turn on interrupts and set if priority is used
  * Note you also need to enable peripheral interrupts in the INTCON register to use CM1IE.
+ * Also initialises pins/LEDs needed for interrupts
 ************************************/
 void Interrupts_init(void)
 {
@@ -18,11 +19,20 @@ void Interrupts_init(void)
     INTCONbits.IPEN=1;  //interrupt priority setting (enabled)
     INTCONbits.GIE=1; 	//turn on interrupts globally (when this is off, all interrupts are deactivated)
     INTCONbits.PEIE = 1; //turn on Peripheral Interrupt 
+    
+    // These are pins for the program
+    LATDbits.LATD7=0;   //FLAG FOR THE LDR "sunset", "sunrise"
+    TRISDbits.TRISD7=0; //set TRIS value for pin (output)
+    LATDbits.LATD4=0;   //FLAG FOR TIMER OVERFLOW
+    TRISDbits.TRISD4=0; //set TRIS value for pin (output)
 }
 
 /************************************
  * High priority interrupt service routine
  * Make sure all enabled interrupts are checked and flags cleared
+ * This interrupt is for the LDR
+ * It triggers on "sunset" and "sunrise"
+ * Sets an LED to on (it will be turned off almost instantly)
 ************************************/
 void __interrupt(high_priority) HighISR()
 {
@@ -33,6 +43,13 @@ void __interrupt(high_priority) HighISR()
     }
 }
 
+/************************************
+ * Low priority interrupt service routine
+ * Make sure all enabled interrupts are checked and flags cleared
+ * This interrupt is for the timer
+ * It will trigger when overflowed
+ * Resets the starting value so that it is one second
+************************************/
 void __interrupt(low_priority) LowISR()
 {
     //add your ISR code here i.e. check the flag, do something (i.e. toggle an LED), clear the flag...

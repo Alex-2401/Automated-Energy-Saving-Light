@@ -20,6 +20,11 @@ void ADC_init(void)
     ADCON0bits.ADON = 1; // Enable ADC
 }
 
+/************************************
+/ ADC_getval
+/ gets the value of the light level from the ADC
+/ didnt really use this function in this program as everything was done using interrupt, but useful for testing
+************************************/
 unsigned int ADC_getval(void)
 {
     unsigned int tmpval;

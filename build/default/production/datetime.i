@@ -24625,9 +24625,11 @@ double yn(int, double);
 
 
 
+void datetime_init(void);
+void calc_time(void);
 void disp_time(void);
-unsigned int month_days(unsigned int month, unsigned int year);
-void LEDarray_control(void);
+void LED_activation(void);
+unsigned int month_days(unsigned int month,unsigned int year);
 unsigned int DST_adjust(unsigned int month,unsigned int hour);
 void Callibrate(void);
 # 4 "datetime.c" 2
@@ -24668,9 +24670,9 @@ unsigned int get16bitTMR0val(void);
 
 void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
-void LEDarray_disp_dec(unsigned int number);
-void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+void LEDarray_control(unsigned int day);
 # 7 "datetime.c" 2
+
 
 
 unsigned int second = 30;
@@ -24680,19 +24682,35 @@ unsigned int day = 10;
 unsigned int weekday = 6;
 unsigned int month = 3;
 unsigned int year = 2024;
+unsigned int longitude = 0;
+unsigned int longitudestz = 0;
+
 
 unsigned int sunrisetime=(6*60+26);
 unsigned int sunsettime=0;
+
+
 char timeString[10];
 char syncString[10];
-
-unsigned int calculatedmidday_minute = 0;
-unsigned int calculatedmidday_hour = 12;
 unsigned int difference = 0;
 unsigned int solarnoonminutes= 0;
 unsigned int EoT = 0;
-unsigned int longitude = 0;
-unsigned int longitudestz = 0;
+
+
+
+
+void datetime_init(void)
+{
+
+    LATHbits.LATH0=1;
+    TRISHbits.TRISH0=0;
+    LATHbits.LATH3=0;
+    TRISHbits.TRISH3=0;
+}
+
+
+
+
 
 void Callibrate(void) {
     if (LATDbits.LATD7)
@@ -24701,7 +24719,8 @@ void Callibrate(void) {
         if (hour > 12) {sunsettime = hour*60 + minute;
 
             EoT = 9.87 * sinf(2 * ((360 * (day - 81) / 365.0) * 3.14159265358979323846 / 180)) - 7.67 * sinf((360 * (day - 81) / 365.0 + 78.7) * 3.14159265358979323846 / 180);
-            solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;
+            if (LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;}
+            if (!LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;}
             difference = (sunsettime- sunrisetime)/2;
             hour =(solarnoonminutes + difference)/60;
             minute = (solarnoonminutes + difference)%60;
@@ -24709,10 +24728,14 @@ void Callibrate(void) {
         }
 
         LCD_setline(1);
-        sprintf(syncString,"%02d %02d %02d          ",second,minute,hour);
+        sprintf(syncString,"%02d:%02d:%02d,%02d",hour,minute,second,difference);
         LCD_sendstring(syncString);
     }
 }
+
+
+
+
 
 unsigned int month_days(unsigned int month, unsigned int year)
 {
@@ -24737,16 +24760,14 @@ unsigned int month_days(unsigned int month, unsigned int year)
     return monthDays;
 }
 
-void disp_time(void) {
-    if (LATDbits.LATD7)
-    {
-        if (hour > 12) {LEDarray_disp_bin(0b111111111);}
-        else {LEDarray_disp_bin(0b000000000);}
-        LATDbits.LATD7 = 0;
-    }
 
+
+
+void calc_time(void)
+{
     if (LATDbits.LATD4)
     {
+
         if (LATHbits.LATH0) {hour++;}
         if (!LATHbits.LATH0) {second++;
             if (second > 59) {second = 0; minute++;
@@ -24755,44 +24776,60 @@ void disp_time(void) {
         }
         LATDbits.LATD4 = 0;
     }
+
+
     if (LATHbits.LATH0) {minute = (get16bitTMR0val()*60)/255;}
     if (hour > 23) {hour = 0; day++; weekday++;}
     if (weekday > 7) {weekday = 1;}
     if (day > month_days(month,year)) {day = 1; month++;}
     if (month > 12) {month = 1; year++;}
 
-    if (hour == 1) {LEDarray_control();}
-    if (hour == 5) {LEDarray_disp_bin(0b111111111);}
-
     if ((month == 3 || month == 10) && weekday == 7 && day > 24) {hour = DST_adjust(month,hour);}
+}
 
+
+
+
+void disp_time(void)
+{
     LCD_setline(2);
-    sprintf(timeString,"%02d %02d %02d %02d %04d",minute,hour,day,month,year);
+    sprintf(timeString,"%02d:%02d %02d/%02d/%04d",hour,minute,day,month,year);
     LCD_sendstring(timeString);
 }
 
+
+
+
+void LED_activation(void)
+{
+
+    if (LATDbits.LATD7)
+    {
+        if (hour > 12) {LEDarray_disp_bin(0b111111111);}
+        else {LEDarray_disp_bin(0b000000000);}
+        LATDbits.LATD7 = 0;
+    }
+
+    if (hour == 1) {LEDarray_control(day);}
+    if (hour == 5) {LEDarray_disp_bin(0b111111111);}
+}
+
+
+
+
 unsigned int DST_adjust(unsigned int month,unsigned int hour)
 {
+
     if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
     {
         hour = 2;
-
         LATHbits.LATH3 = 1;
     }
+
     if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
     {
         hour = 1;
-
         LATHbits.LATH3 = 0;
     }
     return hour;
-}
-
-void LEDarray_control(void)
-{
-    unsigned int temp = 0;
-    if (day % 3 == 0) {temp = 0b001001001;}
-    if (day % 3 == 1) {temp = 0b010010010;}
-    if (day % 3 == 2) {temp = 0b100100100;}
-    LEDarray_disp_bin(temp);
 }

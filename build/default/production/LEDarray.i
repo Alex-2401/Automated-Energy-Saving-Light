@@ -24099,8 +24099,7 @@ unsigned char __t3rd16on(void);
 
 void LEDarray_init(void);
 void LEDarray_disp_bin(unsigned int number);
-void LEDarray_disp_dec(unsigned int number);
-void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+void LEDarray_control(unsigned int day);
 # 2 "LEDarray.c" 2
 
 
@@ -24158,7 +24157,6 @@ void LEDarray_disp_bin(unsigned int number)
     if (number & 0b001000000) LATFbits.LATF0 = 1; else LATFbits.LATF0 = 0;
     if (number & 0b010000000) LATBbits.LATB0 = 1; else LATBbits.LATB0 = 0;
     if (number & 0b100000000) LATBbits.LATB1 = 1; else LATBbits.LATB1 = 0;
-
 }
 
 
@@ -24166,33 +24164,11 @@ void LEDarray_disp_bin(unsigned int number)
 
 
 
-void LEDarray_disp_dec(unsigned int number)
+void LEDarray_control(unsigned int day)
 {
- unsigned int disp_val = 1;
-
-
-    disp_val = (disp_val << (number + 1)) - 1;
-
- LEDarray_disp_bin(disp_val);
-}
-
-
-
-
-
-
-
-void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
-{
- unsigned int cur_disp_val=1;
-    unsigned int max_disp_val=1;
-    unsigned int disp_val;
-
-
- cur_disp_val = (cur_disp_val << (cur_val + 1)) - 1;
-    max_disp_val = (max_disp_val << max);
-    disp_val = cur_disp_val + max_disp_val;
-    if (cur_disp_val >= max_disp_val) {disp_val = cur_disp_val;}
-
- LEDarray_disp_bin(disp_val);
+    unsigned int temp = 0;
+    if (day % 3 == 0) {temp = 0b001001001;}
+    if (day % 3 == 1) {temp = 0b010010010;}
+    if (day % 3 == 2) {temp = 0b100100100;}
+    LEDarray_disp_bin(temp);
 }

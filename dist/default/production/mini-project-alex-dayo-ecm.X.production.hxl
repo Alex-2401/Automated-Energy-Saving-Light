@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o
+ C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o
  -Odist/default/production\mini-project-alex-dayo-ecm.X.production.hex
  -logfile=dist/default/production\mini-project-alex-dayo-ecm.X.production.hxl
  -addressing=1
@@ -9,23 +9,25 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
-  8h - Dh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
-  18h - 55h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
-  E00h - 417Dh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
-  300000h - 300001h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
-  300004h - 300005h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  8h - Dh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  18h - 55h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  E00h - E6Eh		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  E70h - 41C1h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  300000h - 300001h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
+  300004h - 300005h		(C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   Eh - 17h
   56h - DFFh
-  417Eh - 2FFFFFh
+  E6Fh - E6Fh
+  41C2h - 2FFFFFh
   300002h - 300003h
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsqks.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\ALEXPI~1\AppData\Local\Temp\xcAsiv4.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -42,7 +44,7 @@
 00000E30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 --
 00000E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -859,7 +861,12 @@
 00004140 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00004150 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00004160 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00004170 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+00004170 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00004180 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00004190 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000041A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000041B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000041C0 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00300000 | H1 H1 -- -- H1 H1 -- -- -- -- -- -- -- -- -- --
 00300010 | --

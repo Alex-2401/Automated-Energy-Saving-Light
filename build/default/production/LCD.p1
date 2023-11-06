@@ -81,9 +81,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29516
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 29516: extern volatile TRISEbits_t TRISEbits __attribute__((address(0xF85)));
 [v _TRISEbits `VS1383 ~T0 @X0 0 e@3973 ]
-"121 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f67k40.h: 54: __asm("PPSLOCK equ 0DEFh");
 [; <" PPSLOCK equ 0DEFh ;# ">
@@ -2354,31 +2351,3 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LCD.c: 127: }
 [e :UE 2036 ]
 }
-"134
-[; ;LCD.c: 134: void ADC2String(char *buf, unsigned int ADC_val){
-[v _ADC2String `(v ~T0 @X0 1 ef2`*uc`ui ]
-{
-[e :U _ADC2String ]
-[v _buf `*uc ~T0 @X0 1 r1 ]
-[v _ADC_val `ui ~T0 @X0 1 r2 ]
-[f ]
-"136
-[; ;LCD.c: 136:     unsigned int int_part = ADC_val/77;
-[v _int_part `ui ~T0 @X0 1 a ]
-[e = _int_part / _ADC_val -> -> 77 `i `ui ]
-"137
-[; ;LCD.c: 137:     unsigned int frac_part = (ADC_val*100)/77 - int_part *100;
-[v _frac_part `ui ~T0 @X0 1 a ]
-[e = _frac_part - / * _ADC_val -> -> 100 `i `ui -> -> 77 `i `ui * _int_part -> -> 100 `i `ui ]
-"139
-[; ;LCD.c: 139:     sprintf(buf,"%d.%02d",int_part,frac_part);
-[e ( _sprintf (1 , , (. , _buf :s 1C _int_part _frac_part ]
-"140
-[; ;LCD.c: 140:     LCD_sendstring(buf);
-[e ( _LCD_sendstring (1 _buf ]
-"141
-[; ;LCD.c: 141: }
-[e :UE 2037 ]
-}
-[p f _sprintf 8421508 ]
-[a 1C 37 100 46 37 48 50 100 0 ]

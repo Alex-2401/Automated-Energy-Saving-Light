@@ -2299,82 +2299,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 2033 ]
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 [e :U 2034 ]
-"59
-[; ;LEDarray.c: 59: }
+"58
+[; ;LEDarray.c: 58: }
 [e :UE 2016 ]
 }
+"65
+[; ;LEDarray.c: 65: void LEDarray_control(unsigned int day)
+[v _LEDarray_control `(v ~T0 @X0 1 ef1`ui ]
 "66
-[; ;LEDarray.c: 66: void LEDarray_disp_dec(unsigned int number)
-[v _LEDarray_disp_dec `(v ~T0 @X0 1 ef1`ui ]
-"67
-[; ;LEDarray.c: 67: {
+[; ;LEDarray.c: 66: {
 {
-[e :U _LEDarray_disp_dec ]
+[e :U _LEDarray_control ]
+"65
+[; ;LEDarray.c: 65: void LEDarray_control(unsigned int day)
+[v _day `ui ~T0 @X0 1 r1 ]
 "66
-[; ;LEDarray.c: 66: void LEDarray_disp_dec(unsigned int number)
-[v _number `ui ~T0 @X0 1 r1 ]
-"67
-[; ;LEDarray.c: 67: {
+[; ;LEDarray.c: 66: {
 [f ]
+"67
+[; ;LEDarray.c: 67:     unsigned int temp = 0;
+[v _temp `ui ~T0 @X0 1 a ]
+[e = _temp -> -> 0 `i `ui ]
 "68
-[; ;LEDarray.c: 68:  unsigned int disp_val = 1;
-[v _disp_val `ui ~T0 @X0 1 a ]
-[e = _disp_val -> -> 1 `i `ui ]
-"71
-[; ;LEDarray.c: 71:     disp_val = (disp_val << (number + 1)) - 1;
-[e = _disp_val - << _disp_val + _number -> -> 1 `i `ui -> -> 1 `i `ui ]
-"73
-[; ;LEDarray.c: 73:  LEDarray_disp_bin(disp_val);
-[e ( _LEDarray_disp_bin (1 _disp_val ]
-"74
-[; ;LEDarray.c: 74: }
-[e :UE 2035 ]
+[; ;LEDarray.c: 68:     if (day % 3 == 0) {temp = 0b001001001;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 0 `i `ui 2036  ]
+{
+[e = _temp -> -> 73 `i `ui ]
 }
-"82
-[; ;LEDarray.c: 82: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
-[v _LEDarray_disp_PPM `(v ~T0 @X0 1 ef2`ui`ui ]
-"83
-[; ;LEDarray.c: 83: {
+[e :U 2036 ]
+"69
+[; ;LEDarray.c: 69:     if (day % 3 == 1) {temp = 0b010010010;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 1 `i `ui 2037  ]
 {
-[e :U _LEDarray_disp_PPM ]
-"82
-[; ;LEDarray.c: 82: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
-[v _cur_val `ui ~T0 @X0 1 r1 ]
-[v _max `ui ~T0 @X0 1 r2 ]
-"83
-[; ;LEDarray.c: 83: {
-[f ]
-"84
-[; ;LEDarray.c: 84:  unsigned int cur_disp_val=1;
-[v _cur_disp_val `ui ~T0 @X0 1 a ]
-[e = _cur_disp_val -> -> 1 `i `ui ]
-"85
-[; ;LEDarray.c: 85:     unsigned int max_disp_val=1;
-[v _max_disp_val `ui ~T0 @X0 1 a ]
-[e = _max_disp_val -> -> 1 `i `ui ]
-"86
-[; ;LEDarray.c: 86:     unsigned int disp_val;
-[v _disp_val `ui ~T0 @X0 1 a ]
-"89
-[; ;LEDarray.c: 89:  cur_disp_val = (cur_disp_val << (cur_val + 1)) - 1;
-[e = _cur_disp_val - << _cur_disp_val + _cur_val -> -> 1 `i `ui -> -> 1 `i `ui ]
-"90
-[; ;LEDarray.c: 90:     max_disp_val = (max_disp_val << max);
-[e = _max_disp_val << _max_disp_val _max ]
-"91
-[; ;LEDarray.c: 91:     disp_val = cur_disp_val + max_disp_val;
-[e = _disp_val + _cur_disp_val _max_disp_val ]
-"92
-[; ;LEDarray.c: 92:     if (cur_disp_val >= max_disp_val) {disp_val = cur_disp_val;}
-[e $ ! >= _cur_disp_val _max_disp_val 2037  ]
-{
-[e = _disp_val _cur_disp_val ]
+[e = _temp -> -> 146 `i `ui ]
 }
 [e :U 2037 ]
-"94
-[; ;LEDarray.c: 94:  LEDarray_disp_bin(disp_val);
-[e ( _LEDarray_disp_bin (1 _disp_val ]
-"95
-[; ;LEDarray.c: 95: }
-[e :UE 2036 ]
+"70
+[; ;LEDarray.c: 70:     if (day % 3 == 2) {temp = 0b100100100;}
+[e $ ! == % _day -> -> 3 `i `ui -> -> 2 `i `ui 2038  ]
+{
+[e = _temp -> -> 292 `i `ui ]
+}
+[e :U 2038 ]
+"71
+[; ;LEDarray.c: 71:     LEDarray_disp_bin(temp);
+[e ( _LEDarray_disp_bin (1 _temp ]
+"72
+[; ;LEDarray.c: 72: }
+[e :UE 2035 ]
 }

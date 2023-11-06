@@ -24379,17 +24379,3 @@ void LCD_scroll(void)
     LCD_sendbyte(0b00011000,0);
     _delay((unsigned long)((50)*(64000000/4000000.0)));
 }
-
-
-
-
-
-
-void ADC2String(char *buf, unsigned int ADC_val){
-
-    unsigned int int_part = ADC_val/77;
-    unsigned int frac_part = (ADC_val*100)/77 - int_part *100;
-
-    sprintf(buf,"%d.%02d",int_part,frac_part);
-    LCD_sendstring(buf);
-}

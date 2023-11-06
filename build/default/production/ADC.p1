@@ -2083,48 +2083,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC.c: 21: }
 [e :UE 2015 ]
 }
-"23
-[; ;ADC.c: 23: unsigned int ADC_getval(void)
+"28
+[; ;ADC.c: 28: unsigned int ADC_getval(void)
 [v _ADC_getval `(ui ~T0 @X0 1 ef ]
-"24
-[; ;ADC.c: 24: {
+"29
+[; ;ADC.c: 29: {
 {
 [e :U _ADC_getval ]
 [f ]
-"25
-[; ;ADC.c: 25:     unsigned int tmpval;
+"30
+[; ;ADC.c: 30:     unsigned int tmpval;
 [v _tmpval `ui ~T0 @X0 1 a ]
-"26
-[; ;ADC.c: 26:     ADCON0bits.GO = 1;
+"31
+[; ;ADC.c: 31:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
-"28
-[; ;ADC.c: 28:     while (ADCON0bits.GO);
+"33
+[; ;ADC.c: 33:     while (ADCON0bits.GO);
 [e $U 2017  ]
 [e :U 2018 ]
 [e :U 2017 ]
 [e $ != -> . . _ADCON0bits 1 0 `i -> 0 `i 2018  ]
 [e :U 2019 ]
-"30
-[; ;ADC.c: 30:     tmpval = ADRESH;
+"35
+[; ;ADC.c: 35:     tmpval = ADRESH;
 [e = _tmpval -> _ADRESH `ui ]
-"34
-[; ;ADC.c: 34:     tmpval = 255 - tmpval;
+"39
+[; ;ADC.c: 39:     tmpval = 255 - tmpval;
 [e = _tmpval - -> -> 255 `i `ui _tmpval ]
-"40
-[; ;ADC.c: 40:     tmpval = ((tmpval - 20 + 2) *255)/(106-20+2) ;
+"45
+[; ;ADC.c: 45:     tmpval = ((tmpval - 20 + 2) *255)/(106-20+2) ;
 [e = _tmpval / * + - _tmpval -> -> 20 `i `ui -> -> 2 `i `ui -> -> 255 `i `ui -> + - -> 106 `i -> 20 `i -> 2 `i `ui ]
-"41
-[; ;ADC.c: 41:     if (tmpval > 512) {tmpval = 0;}
+"46
+[; ;ADC.c: 46:     if (tmpval > 512) {tmpval = 0;}
 [e $ ! > _tmpval -> -> 512 `i `ui 2020  ]
 {
 [e = _tmpval -> -> 0 `i `ui ]
 }
 [e :U 2020 ]
-"43
-[; ;ADC.c: 43:     return tmpval;
+"48
+[; ;ADC.c: 48:     return tmpval;
 [e ) _tmpval ]
 [e $UE 2016  ]
-"44
-[; ;ADC.c: 44: }
+"49
+[; ;ADC.c: 49: }
 [e :UE 2016 ]
 }
