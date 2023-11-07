@@ -186,7 +186,11 @@ https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/fbce3535
 
 4. Adjusts for daylight savings time
 
-https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/fea92dda-28b3-424e-b296-ebc916592124
+
+
+https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/6ee2f1f9-8205-4373-9e56-9db8ad721582
+
+
 
 5. Maintain synchronicity with the sun indefinitely
 
