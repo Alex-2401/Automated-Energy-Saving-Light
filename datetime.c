@@ -5,7 +5,7 @@
 #include "LCD.h"
 #include "timers.h"
 #include "LEDarray.h"
-
+#include "interrupts.h"
 //THESE NEED TO BE SET UPON LOADUP
 unsigned int second = 30;
 unsigned int minute = 55;
@@ -34,9 +34,9 @@ unsigned int EoT = 0;
 void datetime_init(void)
 {
     // These are set by the user
-    LATHbits.LATH0=1;   //THIS IS FOR TESTING MODE (IF TESTING MODE IS ON, ITS A 1)
+    TESTING_MODE = 1;//THIS IS FOR TESTING MODE (IF TESTING MODE IS ON, ITS A 1)
     TRISHbits.TRISH0=0; //set TRIS value for pin (output)
-    LATHbits.LATH3=0;   //THIS IS FOR THE DST (IF DST IS HAPPENING THEN ITS A 1)
+    DST_FLAG = 0;//THIS IS FOR THE DST (IF DST IS HAPPENING THEN ITS A 1)
     TRISHbits.TRISH3=0; //set TRIS value for pin (output)
 }
 
@@ -45,14 +45,14 @@ void datetime_init(void)
  * Used Equation of Time to modal the cyclical movement of solar midday
 ************************************/
 void Callibrate(void) {
-    if (LATDbits.LATD7)
+    if (LDR_FLAG)
     {
         if (hour < 12) {sunrisetime = hour*60 + minute;}    // measure sunrise time
         if (hour > 12) {sunsettime = hour*60 + minute; // reset time at sunset
             
             EoT = 9.87 * sin(2 * ((360 * (day - 81) / 365.0) * M_PI / 180)) - 7.67 * sin((360 * (day - 81) / 365.0 + 78.7) * M_PI / 180); // use equation of time to find midday at times across the year
-            if (LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;} // solar noon in minutes
-            if (!LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;} // solar noon in minutes            
+            if (TESTING_MODE) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;} // solar noon in minutes
+            if (!TESTING_MODE) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;} // solar noon in minutes            
             difference = (sunsettime- sunrisetime)/2;  // difference between sunrise and midday in minutes 
             hour =(solarnoonminutes + difference)/60;    // reset hour according to midday time 
             minute = (solarnoonminutes + difference)%60;
@@ -97,20 +97,20 @@ unsigned int month_days(unsigned int month, unsigned int year) //gets number of 
 ************************************/
 void calc_time(void)
 {
-    if (LATDbits.LATD4)     //checks if timer has overflown
+    if (TIMER_FLAG)     //checks if timer has overflown
     {
         //if statements to check if test mode or normal mode
-        if (LATHbits.LATH0) {hour++;}     
-        if (!LATHbits.LATH0) {second++;
+        if (TESTING_MODE) {hour++;}     
+        if (!TESTING_MODE) {second++;
             if (second > 59) {second = 0; minute++;
                 if (minute > 59) {minute = 0; hour++;}
             }
         }
-        LATDbits.LATD4 = 0; //reseting flag
+        TIMER_FLAG = 0; //reseting flag
     }
     
     //incrementing/calculating time
-    if (LATHbits.LATH0) {minute = (get16bitTMR0val()*60)/255;}  //getting timer time and converting to minutes 
+    if (TESTING_MODE) {minute = (get16bitTMR0val()*60)/255;}  //getting timer time and converting to minutes 
     if (hour > 23) {hour = 0; day++; weekday++;}      //checks if a day has passed
     if (weekday > 7) {weekday = 1;}     //checks if week has passed
     if (day > month_days(month,year)) {day = 1; month++;}      //checks if a month has passed
@@ -135,11 +135,11 @@ void disp_time(void)
 void LED_activation(void)
 {
     //Checks if LDR has been triggered and does appropriate lighting
-    if (LATDbits.LATD7)
+    if (LDR_FLAG)
     {
         if (hour > 12) {LEDarray_disp_bin(0b111111111);}
         else {LEDarray_disp_bin(0b000000000);}
-        LATDbits.LATD7 = 0;
+        LDR_FLAG = 0;
     }
         
     if (hour == 1) {LEDarray_control(day);}              //1am check
@@ -152,16 +152,16 @@ void LED_activation(void)
 unsigned int DST_adjust(unsigned int month,unsigned int hour)
 {
     //march check       1am check       DST off check
-    if (month == 3 && hour == 1 && LATHbits.LATH3 == 0)
+    if (month == 3 && hour == 1 && DST_FLAG == 0)
     {
         hour = 2;
-        LATHbits.LATH3 = 1;
+        DST_FLAG = 1;
     }
     //october check     2am check       DST on check
-    if (month == 10 && hour == 2 && LATHbits.LATH3 == 1)
+    if (month == 10 && hour == 2 && DST_FLAG == 1)
     {
         hour = 1;    
-        LATHbits.LATH3 = 0;
+        DST_FLAG = 0;
     }
     return hour;
 }

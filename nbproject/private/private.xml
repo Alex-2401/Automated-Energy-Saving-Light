@@ -4,14 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/interrupts.c</file>
-            <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/LEDarray.h</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/LCD.c</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/comparator.c</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/ADC.c</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/datetime.h</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/main.c</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/LEDarray.c</file>
+            <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/interrupts.h</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/datetime.c</file>
+            <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/LCD.h</file>
             <file>file:/C:/Users/AlexPittaras/Documents/GitHub/mini-project-alex-dayo-ecm.X/timers.c</file>
         </group>
     </open-files>

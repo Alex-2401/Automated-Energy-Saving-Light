@@ -71,8 +71,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9 ./timers.h
 [; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
 [v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
-"14 ./datetime.h
-[; ;./datetime.h: 14: unsigned int DST_adjust(unsigned int month,unsigned int hour);
+"18 ./datetime.h
+[; ;./datetime.h: 18: unsigned int DST_adjust(unsigned int month,unsigned int hour);
 [v _DST_adjust `(ui ~T0 @X0 0 ef2`ui`ui ]
 "10 ./LEDarray.h
 [; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
@@ -2153,13 +2153,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _datetime_init ]
 [f ]
 "37
-[; ;datetime.c: 37:     LATHbits.LATH0=1;
+[; ;datetime.c: 37:     LATHbits.LATH0 = 1;
 [e = . . _LATHbits 0 0 -> -> 1 `i `uc ]
 "38
 [; ;datetime.c: 38:     TRISHbits.TRISH0=0;
 [e = . . _TRISHbits 0 0 -> -> 0 `i `uc ]
 "39
-[; ;datetime.c: 39:     LATHbits.LATH3=0;
+[; ;datetime.c: 39:     LATHbits.LATH3 = 0;
 [e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
 "40
 [; ;datetime.c: 40:     TRISHbits.TRISH3=0;
@@ -2196,15 +2196,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;datetime.c: 53:             EoT = 9.87 * sinf(2 * ((360 * (day - 81) / 365.0) * 3.14159265358979323846 / 180)) - 7.67 * sinf((360 * (day - 81) / 365.0 + 78.7) * 3.14159265358979323846 / 180);
 [e = _EoT -> - * .9.87 -> ( _sinf (1 -> * -> -> 2 `i `d / * / -> * -> -> 360 `i `ui - _day -> -> 81 `i `ui `d .365.0 .3.14159265358979323846 -> -> 180 `i `d `f `d * .7.67 -> ( _sinf (1 -> / * + / -> * -> -> 360 `i `ui - _day -> -> 81 `i `ui `d .365.0 .78.7 .3.14159265358979323846 -> -> 180 `i `d `f `d `ui ]
 "54
-[; ;datetime.c: 54:             if (LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;}
-[e $ ! != -> . . _LATHbits 0 3 `i -> 0 `i 2022  ]
+[; ;datetime.c: 54:             if (LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;}
+[e $ ! != -> . . _LATHbits 0 0 `i -> 0 `i 2022  ]
 {
 [e = _solarnoonminutes + - + -> * -> 12 `i -> 60 `i `ui * -> -> 4 `i `ui - _longitude _longitudestz _EoT -> -> 1 `i `ui ]
 }
 [e :U 2022 ]
 "55
-[; ;datetime.c: 55:             if (!LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;}
-[e $ ! ! != -> . . _LATHbits 0 3 `i -> 0 `i 2023  ]
+[; ;datetime.c: 55:             if (!LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;}
+[e $ ! ! != -> . . _LATHbits 0 0 `i -> 0 `i 2023  ]
 {
 [e = _solarnoonminutes - + -> * -> 12 `i -> 60 `i `ui * -> -> 4 `i `ui - _longitude _longitudestz _EoT ]
 }

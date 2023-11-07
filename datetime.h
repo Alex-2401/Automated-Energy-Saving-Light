@@ -5,6 +5,10 @@
 
 #define _XTAL_FREQ 64000000
 
+//Define Pins/LEDs Used as flags
+#define TESTING_MODE LATHbits.LATH0
+#define DST_FLAG LATHbits.LATH3
+  
 //function prototypes
 void datetime_init(void);
 void calc_time(void);

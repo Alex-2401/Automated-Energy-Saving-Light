@@ -20,11 +20,11 @@ void Interrupts_init(void)
     INTCONbits.GIE=1; 	//turn on interrupts globally (when this is off, all interrupts are deactivated)
     INTCONbits.PEIE = 1; //turn on Peripheral Interrupt 
     
-    // These are pins for the program
-    LATDbits.LATD7=0;   //FLAG FOR THE LDR "sunset", "sunrise"
+    // These are pins for the program 
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
-    LATDbits.LATD4=0;   //FLAG FOR TIMER OVERFLOW
+    LDR_FLAG = 0;   //FLAG FOR THE LDR "sunset", "sunrise"
     TRISDbits.TRISD4=0; //set TRIS value for pin (output)
+    TIMER_FLAG = 0; //FLAG FOR TIMER OVERFLOW
 }
 
 /************************************
@@ -38,7 +38,7 @@ void __interrupt(high_priority) HighISR()
 {
     //add your ISR code here i.e. check the flag, do something (i.e. toggle an LED), clear the flag...
     if(PIR2bits.C1IF){ 	//check the interrupt source
-        LATDbits.LATD7 = 1;
+        LDR_FLAG = 1;
         PIR2bits.C1IF=0; 	//clear the interrupt flag!       
     }
 }
@@ -57,7 +57,7 @@ void __interrupt(low_priority) LowISR()
         TMR0H=0b00001011;    //setting it to first half (MSBs)
         TMR0L=0b11011011;    //setting it to second half (LSBs)
         //this will happen for every overflow
-        LATDbits.LATD4 = 1;
+        TIMER_FLAG = 1;
         PIR0bits.TMR0IF=0; 	//clear the interrupt flag!  
     }
 }

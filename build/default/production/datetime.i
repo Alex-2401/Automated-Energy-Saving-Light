@@ -24617,14 +24617,7 @@ double yn(int, double);
 # 3 "datetime.c" 2
 
 # 1 "./datetime.h" 1
-
-
-
-
-
-
-
-
+# 13 "./datetime.h"
 void datetime_init(void);
 void calc_time(void);
 void disp_time(void);
@@ -24673,6 +24666,12 @@ void LEDarray_disp_bin(unsigned int number);
 void LEDarray_control(unsigned int day);
 # 7 "datetime.c" 2
 
+# 1 "./interrupts.h" 1
+# 12 "./interrupts.h"
+void Interrupts_init(void);
+void __attribute__((picinterrupt(("high_priority")))) HighISR();
+void __attribute__((picinterrupt(("low_priority")))) LowISR();
+# 8 "datetime.c" 2
 
 
 unsigned int second = 30;
@@ -24702,9 +24701,9 @@ unsigned int EoT = 0;
 void datetime_init(void)
 {
 
-    LATHbits.LATH0=1;
+    LATHbits.LATH0 = 1;
     TRISHbits.TRISH0=0;
-    LATHbits.LATH3=0;
+    LATHbits.LATH3 = 0;
     TRISHbits.TRISH3=0;
 }
 
@@ -24719,8 +24718,8 @@ void Callibrate(void) {
         if (hour > 12) {sunsettime = hour*60 + minute;
 
             EoT = 9.87 * sinf(2 * ((360 * (day - 81) / 365.0) * 3.14159265358979323846 / 180)) - 7.67 * sinf((360 * (day - 81) / 365.0 + 78.7) * 3.14159265358979323846 / 180);
-            if (LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;}
-            if (!LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;}
+            if (LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT + 1;}
+            if (!LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitude - longitudestz) - EoT;}
             difference = (sunsettime- sunrisetime)/2;
             hour =(solarnoonminutes + difference)/60;
             minute = (solarnoonminutes + difference)%60;

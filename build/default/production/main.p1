@@ -15,23 +15,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9 ./LEDarray.h
 [; ;./LEDarray.h: 9: void LEDarray_init(void);
 [v _LEDarray_init `(v ~T0 @X0 0 ef ]
-"8 ./interrupts.h
-[; ;./interrupts.h: 8: void Interrupts_init(void);
+"12 ./interrupts.h
+[; ;./interrupts.h: 12: void Interrupts_init(void);
 [v _Interrupts_init `(v ~T0 @X0 0 ef ]
-"9 ./datetime.h
-[; ;./datetime.h: 9: void datetime_init(void);
+"13 ./datetime.h
+[; ;./datetime.h: 13: void datetime_init(void);
 [v _datetime_init `(v ~T0 @X0 0 ef ]
-"15
-[; ;./datetime.h: 15: void Callibrate(void);
+"19
+[; ;./datetime.h: 19: void Callibrate(void);
 [v _Callibrate `(v ~T0 @X0 0 ef ]
-"10
-[; ;./datetime.h: 10: void calc_time(void);
+"14
+[; ;./datetime.h: 14: void calc_time(void);
 [v _calc_time `(v ~T0 @X0 0 ef ]
-"12
-[; ;./datetime.h: 12: void LED_activation(void);
+"16
+[; ;./datetime.h: 16: void LED_activation(void);
 [v _LED_activation `(v ~T0 @X0 0 ef ]
-"11
-[; ;./datetime.h: 11: void disp_time(void);
+"15
+[; ;./datetime.h: 15: void disp_time(void);
 [v _disp_time `(v ~T0 @X0 0 ef ]
 [v F205 `(v ~T0 @X0 1 tf1`ul ]
 "20 C:\Program Files\Microchip\xc8\v2.45\pic\include\builtins.h

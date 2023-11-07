@@ -573,7 +573,7 @@
 "29272
 [u S306 . 1 `S297 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES306  1 e 1 @3971 ]
-[s S1305 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S1283 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -583,8 +583,8 @@
 `uc 1 TRISD7 1 0 :1:7 
 ]
 "29394
-[u S1314 . 1 `S1305 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES1314  1 e 1 @3972 ]
+[u S1292 . 1 `S1283 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1292  1 e 1 @3972 ]
 [s S339 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 

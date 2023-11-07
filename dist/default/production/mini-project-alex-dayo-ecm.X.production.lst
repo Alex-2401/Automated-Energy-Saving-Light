@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.45 build 20230818022343 
-                                                                                               Mon Nov 06 22:26:26 2023
+                                                                                               Tue Nov 07 00:26:42 2023
 
 Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1 
      1                           	processor	18F67K40
@@ -1340,13 +1340,13 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   1310   0041B4                     _datetime_init:
   1311                           	callstack 28
   1312   0041B4                     
-  1313                           ;datetime.c: 37:     LATHbits.LATH0=1;
+  1313                           ;datetime.c: 37:     LATHbits.LATH0 = 1;
   1314   0041B4  8080               	bsf	128,0,c	;volatile
   1315                           
   1316                           ;datetime.c: 38:     TRISHbits.TRISH0=0;
   1317   0041B6  9088               	bcf	136,0,c	;volatile
   1318                           
-  1319                           ;datetime.c: 39:     LATHbits.LATH3=0;
+  1319                           ;datetime.c: 39:     LATHbits.LATH3 = 0;
   1320   0041B8  9680               	bcf	128,3,c	;volatile
   1321                           
   1322                           ;datetime.c: 40:     TRISHbits.TRISH3=0;
@@ -3009,17 +3009,17 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   2908                           ;interrupts.c: 21:     INTCONbits.PEIE = 1;
   2909   004134  8CF2               	bsf	242,6,c	;volatile
   2910                           
-  2911                           ;interrupts.c: 24:     LATDbits.LATD7=0;
-  2912   004136  9E7C               	bcf	124,7,c	;volatile
+  2911                           ;interrupts.c: 24:     TRISDbits.TRISD7=0;
+  2912   004136  9E84               	bcf	132,7,c	;volatile
   2913                           
-  2914                           ;interrupts.c: 25:     TRISDbits.TRISD7=0;
-  2915   004138  9E84               	bcf	132,7,c	;volatile
+  2914                           ;interrupts.c: 25:     LATDbits.LATD7 = 0;
+  2915   004138  9E7C               	bcf	124,7,c	;volatile
   2916                           
-  2917                           ;interrupts.c: 26:     LATDbits.LATD4=0;
-  2918   00413A  987C               	bcf	124,4,c	;volatile
+  2917                           ;interrupts.c: 26:     TRISDbits.TRISD4=0;
+  2918   00413A  9884               	bcf	132,4,c	;volatile
   2919                           
-  2920                           ;interrupts.c: 27:     TRISDbits.TRISD4=0;
-  2921   00413C  9884               	bcf	132,4,c	;volatile
+  2920                           ;interrupts.c: 27:     LATDbits.LATD4 = 0;
+  2921   00413C  987C               	bcf	124,4,c	;volatile
   2922   00413E                     
   2923                           ; BSR set to: 14
   2924   00413E  0012               	return		;funcret
@@ -3533,9 +3533,9 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   3404   001F68  C06D  F0E4         	movff	?___fltol,_EoT
   3405   001F6C  C06E  F0E5         	movff	?___fltol+1,_EoT+1
   3406   001F70                     
-  3407                           ;datetime.c: 54:             if (LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitud
+  3407                           ;datetime.c: 54:             if (LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitud
       +                          e - longitudestz) - EoT + 1;}
-  3408   001F70  A680               	btfss	128,3,c	;volatile
+  3408   001F70  A080               	btfss	128,0,c	;volatile
   3409   001F72  EFBD  F00F         	goto	u5111
   3410   001F76  EFBF  F00F         	goto	u5110
   3411   001F7A                     u5111:
@@ -3552,9 +3552,9 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   3422   001F8E  6FE7               	movwf	(_solarnoonminutes+1)& (0+255),b
   3423   001F90                     l4550:
   3424                           
-  3425                           ;datetime.c: 55:             if (!LATHbits.LATH3) {solarnoonminutes = 12*60 + 4*(longitu
+  3425                           ;datetime.c: 55:             if (!LATHbits.LATH0) {solarnoonminutes = 12*60 + 4*(longitu
       +                          de - longitudestz) - EoT;}
-  3426   001F90  B680               	btfsc	128,3,c	;volatile
+  3426   001F90  B080               	btfsc	128,0,c	;volatile
   3427   001F92  EFCD  F00F         	goto	u5121
   3428   001F96  EFCF  F00F         	goto	u5120
   3429   001F9A                     u5121:
@@ -10906,7 +10906,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.45 build 20230818022343 
-Symbol Table                                                                                   Mon Nov 06 22:26:26 2023
+Symbol Table                                                                                   Tue Nov 07 00:26:42 2023
 
               ___fldiv@aexp 0034                ___fldiv@bexp 0033                ___fldiv@sign 002C  
                         _C0 0E2D                          _C1 0E29                          _C2 0E25  

@@ -24290,13 +24290,7 @@ void LEDarray_control(unsigned int day);
 # 12 "main.c" 2
 
 # 1 "./interrupts.h" 1
-
-
-
-
-
-
-
+# 12 "./interrupts.h"
 void Interrupts_init(void);
 void __attribute__((picinterrupt(("high_priority")))) HighISR();
 void __attribute__((picinterrupt(("low_priority")))) LowISR();
@@ -24327,14 +24321,7 @@ unsigned int ADC_getval(void);
 # 15 "main.c" 2
 
 # 1 "./datetime.h" 1
-
-
-
-
-
-
-
-
+# 13 "./datetime.h"
 void datetime_init(void);
 void calc_time(void);
 void disp_time(void);
