@@ -186,7 +186,9 @@ https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/fbce3535
 
 4. Adjusts for daylight savings time
 
-(Video Not Shown)
+https://imperiallondon-my.sharepoint.com/personal/ap2421_ic_ac_uk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fap2421%5Fic%5Fac%5Fuk%2FDocuments%2FVID%2D20231107%2DWA0013%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
+
+https://imperiallondon-my.sharepoint.com/personal/ap2421_ic_ac_uk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fap2421%5Fic%5Fac%5Fuk%2FDocuments%2FVID%2D20231107%2DWA0012%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
 
 5. Maintain synchronicity with the sun indefinitely
 
@@ -195,7 +197,7 @@ https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/04bd3876
 6. Be fully automatic (requires zero maintenance after installation) (Leap Year)
 
 https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/b6f61832-ef04-4f38-8ec1-eedf7c85690d
-
+https://imperiallondon-my.sharepoint.com/personal/ap2421_ic_ac_uk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fap2421%5Fic%5Fac%5Fuk%2FDocuments%2FVID%5F20231107%5F092817%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
 
 ## Supplementary information and help
 At first the task may seem quite straightforward but there are several points that often prove more tricky. The first is how to test code during development? You could test in real world conditions but you would be limited to one test cycle per day and this would severely slow down your development and debugging progress. To get around this you could implement a "testing mode" and pretend that a day lasts 24 seconds. This could be done using a #define directive to switch between "normal" and "testing" modes for your code.
