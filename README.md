@@ -176,6 +176,27 @@ The principal learning objectives for this project are:
 - Develop your ability to independently plan, organise and structure your code 
 - Improve your grasp of the C language and writing your own functions
 
+## Demonstration
+
+1. Monitors light level with the LDR and turns on an LED in low light conditions (i.e. night-time) and off in bright conditions (i.e. daytime)
+1. Displays the current hour of day on the LED array in binary
+1. Turns the light off between approx. 1am and 5am
+
+https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/fbce3535-d867-4bcb-868a-6ee9b345ba44
+
+4. Adjusts for daylight savings time
+
+https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/fea92dda-28b3-424e-b296-ebc916592124
+
+5. Maintain synchronicity with the sun indefinitely
+
+https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/04bd3876-8393-484c-a4fe-98ede1b54d40
+
+6. Be fully automatic (requires zero maintenance after installation) (Leap Year)
+
+https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/b6f61832-ef04-4f38-8ec1-eedf7c85690d
+
+
 ## Supplementary information and help
 At first the task may seem quite straightforward but there are several points that often prove more tricky. The first is how to test code during development? You could test in real world conditions but you would be limited to one test cycle per day and this would severely slow down your development and debugging progress. To get around this you could implement a "testing mode" and pretend that a day lasts 24 seconds. This could be done using a #define directive to switch between "normal" and "testing" modes for your code.
 
