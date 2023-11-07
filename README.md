@@ -111,6 +111,7 @@ Midday is calculated using the simplified form of the EoT (Equation of Time), an
 
 <img width="566" alt="image" src="https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/3269b7b2-7038-4f99-b603-9e970f8d7d1b">
 
+<img width="767" alt="image" src="https://github.com/ME3-HECM/mini-project-alex-dayo-ecm/assets/147276883/a06f8421-096e-4427-ba87-d71829a6efd1">
 
 More information on this topic can be found below: https://en.wikipedia.org/wiki/Equation_of_time
 
