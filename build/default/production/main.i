@@ -24353,7 +24353,6 @@ void main(void) {
 
 
 
-
         Callibrate();
         calc_time();
         LED_activation();

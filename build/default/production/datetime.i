@@ -24726,9 +24726,8 @@ void Callibrate(void) {
             second = ((solarnoonminutes + difference)%60)%60;
         }
 
-        LCD_setline(1);
-        sprintf(syncString,"%02d:%02d:%02d,%02d",hour,minute,second,difference);
-        LCD_sendstring(syncString);
+
+
     }
 }
 
@@ -24791,7 +24790,7 @@ void calc_time(void)
 
 void disp_time(void)
 {
-    LCD_setline(2);
+    LCD_setline(1);
     sprintf(timeString,"%02d:%02d %02d/%02d/%04d",hour,minute,day,month,year);
     LCD_sendstring(timeString);
 }
@@ -24801,16 +24800,16 @@ void disp_time(void)
 
 void LED_activation(void)
 {
+    if (hour == 1) {LEDarray_control(day);}
+    if (hour == 5) {LEDarray_disp_bin(0b111111111);}
+
 
     if (LATDbits.LATD7)
     {
-        if (hour > 12) {LEDarray_disp_bin(0b111111111);}
-        else {LEDarray_disp_bin(0b000000000);}
-        LATDbits.LATD7 = 0;
+        if (hour <= 5) {LEDarray_disp_bin(0b000000000);}
+        else if (hour < 12) {LEDarray_disp_bin(0b000000000); LATDbits.LATD7 = 0;}
+        if (hour > 12) {LEDarray_disp_bin(0b111111111); LATDbits.LATD7 = 0;}
     }
-
-    if (hour == 1) {LEDarray_control(day);}
-    if (hour == 5) {LEDarray_disp_bin(0b111111111);}
 }
 
 

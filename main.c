@@ -31,8 +31,7 @@ void main(void) {
     char lightString[4];
     
     while (1)
-    { 
-        
+    {  
 //        LCD_setline(1); //Set Line 1
 //        sprintf(lightString,"%03d",ADC_getval());
 //        LCD_sendstring(lightString);

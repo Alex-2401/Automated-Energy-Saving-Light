@@ -2054,28 +2054,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34
 [; ;main.c: 34:     {
 {
-"40
-[; ;main.c: 40:         Callibrate();
+"39
+[; ;main.c: 39:         Callibrate();
 [e ( _Callibrate ..  ]
-"41
-[; ;main.c: 41:         calc_time();
+"40
+[; ;main.c: 40:         calc_time();
 [e ( _calc_time ..  ]
-"42
-[; ;main.c: 42:         LED_activation();
+"41
+[; ;main.c: 41:         LED_activation();
 [e ( _LED_activation ..  ]
-"43
-[; ;main.c: 43:         disp_time();
+"42
+[; ;main.c: 42:         disp_time();
 [e ( _disp_time ..  ]
-"45
-[; ;main.c: 45:         _delay((unsigned long)((10)*(64000000/4000.0)));
+"44
+[; ;main.c: 44:         _delay((unsigned long)((10)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"46
-[; ;main.c: 46:     }
+"45
+[; ;main.c: 45:     }
 }
 [e :U 2018 ]
 [e $U 2019  ]
 [e :U 2020 ]
-"47
-[; ;main.c: 47: }
+"46
+[; ;main.c: 46: }
 [e :UE 2017 ]
 }

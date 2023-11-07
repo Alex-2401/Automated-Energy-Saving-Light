@@ -57,11 +57,10 @@ void Callibrate(void) {
             hour =(solarnoonminutes + difference)/60;    // reset hour according to midday time 
             minute = (solarnoonminutes + difference)%60;
             second = ((solarnoonminutes + difference)%60)%60;
-        }
-        
-        LCD_setline(1); //Set Line 1
-        sprintf(syncString,"%02d:%02d:%02d,%02d",hour,minute,second,difference);
-        LCD_sendstring(syncString);
+        }       
+//        LCD_setline(2); //Set Line 2
+//        sprintf(syncString,"%02d:%02d:%02d,%02d",hour,minute,second,difference);
+//        LCD_sendstring(syncString);
     }
 }
 
@@ -124,7 +123,7 @@ void calc_time(void)
 ************************************/
 void disp_time(void)
 {
-    LCD_setline(2); //Set Line 2
+    LCD_setline(1); //Set Line 1
     sprintf(timeString,"%02d:%02d %02d/%02d/%04d",hour,minute,day,month,year);  //displaying date and time
     LCD_sendstring(timeString);
 }
@@ -134,16 +133,16 @@ void disp_time(void)
 ************************************/
 void LED_activation(void)
 {
+    if (hour == 1) {LEDarray_control(day);}              //1am check
+    if (hour == 5) {LEDarray_disp_bin(0b111111111);}  //5am check
+    
     //Checks if LDR has been triggered and does appropriate lighting
     if (LDR_FLAG)
     {
-        if (hour > 12) {LEDarray_disp_bin(0b111111111);}
-        else {LEDarray_disp_bin(0b000000000);}
-        LDR_FLAG = 0;
+        if (hour <= 5) {LEDarray_disp_bin(0b000000000);} //before 5 doesnt turn the flag off so the it keeps the lights off so they dont turn on again
+        else if (hour < 12) {LEDarray_disp_bin(0b000000000); LDR_FLAG = 0;}
+        if (hour > 12) {LEDarray_disp_bin(0b111111111); LDR_FLAG = 0;}
     }
-        
-    if (hour == 1) {LEDarray_control(day);}              //1am check
-    if (hour == 5) {LEDarray_disp_bin(0b111111111);}  //5am check
 }
 
 /************************************
