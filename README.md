@@ -37,7 +37,9 @@ The date and time can be defined in 7 variables
 The position can be defined in 2 variables
 1. longitude (longitude where you are located)
 2. longitudestz (longitude where the time zone is located)
+
 The variables/values that are suggested to be defined are
+
 1. sunrisetime (time of the sun rise on a given day)
 2. sunsettime (time of the sun set on a given day)
 
